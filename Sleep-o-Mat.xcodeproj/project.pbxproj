@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		2A878361265564E100CEBBBF /* sleepwatcher in bin */ = {isa = PBXBuildFile; fileRef = 2AB2705B265546E8001EB8C9 /* sleepwatcher */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2A878365265564F000CEBBBF /* script.command in script */ = {isa = PBXBuildFile; fileRef = 2A87835B2655646600CEBBBF /* script.command */; };
+		2A87837A26557A7800CEBBBF /* rc.sleep in config */ = {isa = PBXBuildFile; fileRef = 2A87836F26557A4F00CEBBBF /* rc.sleep */; };
+		2A87837B26557A7800CEBBBF /* de.bernhard-baehr.sleepwatcher-20compatibility-localuser.plist in config */ = {isa = PBXBuildFile; fileRef = 2A87837026557A4F00CEBBBF /* de.bernhard-baehr.sleepwatcher-20compatibility-localuser.plist */; };
+		2A87837C26557A7800CEBBBF /* rc.wakeup in config */ = {isa = PBXBuildFile; fileRef = 2A87837126557A4F00CEBBBF /* rc.wakeup */; };
+		2A87837D26557A7800CEBBBF /* de.bernhard-baehr.sleepwatcher-20compatibility.plist in config */ = {isa = PBXBuildFile; fileRef = 2A87837226557A4F00CEBBBF /* de.bernhard-baehr.sleepwatcher-20compatibility.plist */; };
 		2AB27047265530A9001EB8C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB27046265530A9001EB8C9 /* AppDelegate.swift */; };
 		2AB27049265530A9001EB8C9 /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB27048265530A9001EB8C9 /* MainWindow.swift */; };
 		2AB2704B265530AA001EB8C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2704A265530AA001EB8C9 /* Assets.xcassets */; };
@@ -38,10 +42,28 @@
 			name = script;
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2A87837826557A5900CEBBBF /* config */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = config;
+			dstSubfolderSpec = 7;
+			files = (
+				2A87837A26557A7800CEBBBF /* rc.sleep in config */,
+				2A87837B26557A7800CEBBBF /* de.bernhard-baehr.sleepwatcher-20compatibility-localuser.plist in config */,
+				2A87837C26557A7800CEBBBF /* rc.wakeup in config */,
+				2A87837D26557A7800CEBBBF /* de.bernhard-baehr.sleepwatcher-20compatibility.plist in config */,
+			);
+			name = config;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2A87835B2655646600CEBBBF /* script.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = script.command; sourceTree = "<group>"; };
+		2A87836F26557A4F00CEBBBF /* rc.sleep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = rc.sleep; sourceTree = "<group>"; };
+		2A87837026557A4F00CEBBBF /* de.bernhard-baehr.sleepwatcher-20compatibility-localuser.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "de.bernhard-baehr.sleepwatcher-20compatibility-localuser.plist"; sourceTree = "<group>"; };
+		2A87837126557A4F00CEBBBF /* rc.wakeup */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = rc.wakeup; sourceTree = "<group>"; };
+		2A87837226557A4F00CEBBBF /* de.bernhard-baehr.sleepwatcher-20compatibility.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "de.bernhard-baehr.sleepwatcher-20compatibility.plist"; sourceTree = "<group>"; };
 		2AB27043265530A9001EB8C9 /* Sleep-o-Mat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleep-o-Mat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AB27046265530A9001EB8C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AB27048265530A9001EB8C9 /* MainWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
@@ -63,6 +85,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A87836E26557A4F00CEBBBF /* config */ = {
+			isa = PBXGroup;
+			children = (
+				2A87836F26557A4F00CEBBBF /* rc.sleep */,
+				2A87837026557A4F00CEBBBF /* de.bernhard-baehr.sleepwatcher-20compatibility-localuser.plist */,
+				2A87837126557A4F00CEBBBF /* rc.wakeup */,
+				2A87837226557A4F00CEBBBF /* de.bernhard-baehr.sleepwatcher-20compatibility.plist */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
 		2AB2703A265530A9001EB8C9 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +130,7 @@
 		2AB2705A265546E8001EB8C9 /* bin */ = {
 			isa = PBXGroup;
 			children = (
+				2A87836E26557A4F00CEBBBF /* config */,
 				2AB2705B265546E8001EB8C9 /* sleepwatcher */,
 			);
 			path = bin;
@@ -122,6 +156,7 @@
 				2AB27041265530A9001EB8C9 /* Resources */,
 				2A878360265564D700CEBBBF /* bin */,
 				2A878364265564E500CEBBBF /* script */,
+				2A87837826557A5900CEBBBF /* config */,
 			);
 			buildRules = (
 			);

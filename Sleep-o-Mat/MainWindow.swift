@@ -111,6 +111,19 @@ class MainWindow: NSViewController {
         }
     }
     
+    
+    @IBAction func start_stop_sw(_ sender: Any) {
+        run_check()
+        let sw_running = UserDefaults.standard.bool(forKey: "sleepwatcher_running")
+        if sw_running == true{
+            syncShellExec(path: scriptPath, args: ["kill_sw"])
+        } else {
+            syncShellExec(path: scriptPath, args: ["start_sw"])
+        }
+        
+        run_check()
+    }
+    
     @IBAction func browseFile_system_sleep(sender: AnyObject) {
         
         let dialog = NSOpenPanel();

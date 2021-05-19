@@ -61,9 +61,14 @@ function run_check()
     fi
 }
 
-function bla()
+function kill_sw()
 {
-    run_check=$( ps ax |grep sleepwatcher | grep -v grep )
+    pkill -f sleepwatcher
+}
+
+function start_sw()
+{
+    ../bin/./sleepwatcher -S "echo doll" &
 }
 
 $1
