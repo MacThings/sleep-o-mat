@@ -123,9 +123,12 @@ function start_sw()
         c9=$( echo "-U" "$power_unplug_path" )
     fi
     
-    options=$( echo "$c1" "$c2" "$c3" -"$c4" "$c5" "$c6" "$c7" "$c8" "$c9" | sed 's/\ \ /\ /g')
+    options=$( echo "$c1" "$c2" "$c3" -"$c4" "$c5" "$c6" "$c7" "$c8" "$c9" | sed 's/\ \ /\ /g' )
 
     ../bin/./sleepwatcher "$options" &
+    
+    #../PlistBuddy -c "Delete ProgramArguments" de.bernhard-baehr.sleepwatcher-20compatibility.plist
+    #../PlistBuddy -c "Add :ProgramArguments:Item0 string /usr/local/bin/sleepwatcher" de.bernhard-baehr.sleepwatcher-20compatibility.plist
 }
 
 $1
