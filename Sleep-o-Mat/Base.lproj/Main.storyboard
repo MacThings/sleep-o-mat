@@ -745,7 +745,7 @@
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <connections>
-                                                <binding destination="wVf-kP-7TK" name="value" keyPath="values.act-system_sleep" id="phl-aa-D4W"/>
+                                                <binding destination="wVf-kP-7TK" name="value" keyPath="values.act_system_sleep" id="09D-1I-tSa"/>
                                             </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RCe-il-JbT">
@@ -785,7 +785,7 @@
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <connections>
-                                                <binding destination="wVf-kP-7TK" name="value" keyPath="values.act-system_wakeup" id="zbJ-9B-dGw"/>
+                                                <binding destination="wVf-kP-7TK" name="value" keyPath="values.act_system_wakeup" id="7sc-nm-qfF"/>
                                             </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PTr-dG-Pji">
@@ -825,7 +825,7 @@
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <connections>
-                                                <binding destination="wVf-kP-7TK" name="value" keyPath="values.act-display_dim" id="v8d-Ah-44d"/>
+                                                <binding destination="wVf-kP-7TK" name="value" keyPath="values.act_display_dim" id="mj5-CY-tVs"/>
                                             </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9qs-8O-rfM">
@@ -865,7 +865,7 @@
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <connections>
-                                                <binding destination="wVf-kP-7TK" name="value" keyPath="values.act-display_undim" id="JN9-Db-EGF"/>
+                                                <binding destination="wVf-kP-7TK" name="value" keyPath="values.act_display_undim" id="WnE-Gl-tKh"/>
                                             </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="opK-o9-a41">
@@ -905,7 +905,7 @@
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <connections>
-                                                <binding destination="wVf-kP-7TK" name="value" keyPath="values.act-display_sleep" id="sEG-Rw-jRg"/>
+                                                <binding destination="wVf-kP-7TK" name="value" keyPath="values.act_display_sleep" id="sWf-aG-h1Z"/>
                                             </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B5c-qA-FbF">
@@ -945,7 +945,7 @@
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <connections>
-                                                <binding destination="wVf-kP-7TK" name="value" keyPath="values.act-user_idle" id="sNR-Xl-rOA"/>
+                                                <binding destination="wVf-kP-7TK" name="value" keyPath="values.act_user_idle" id="Tis-Ip-Ej6"/>
                                             </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zoK-YV-5WT">
@@ -985,7 +985,7 @@
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <connections>
-                                                <binding destination="wVf-kP-7TK" name="value" keyPath="values.act-user_resume" id="RVY-8U-mTO"/>
+                                                <binding destination="wVf-kP-7TK" name="value" keyPath="values.act_user_resume" id="tBj-Rf-t7m"/>
                                             </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gIa-5R-NKM">
@@ -1025,7 +1025,7 @@
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <connections>
-                                                <binding destination="wVf-kP-7TK" name="value" keyPath="values.act-power_plug" id="WpS-O5-ToV"/>
+                                                <binding destination="wVf-kP-7TK" name="value" keyPath="values.act_power_plug" id="vUz-9q-Urs"/>
                                             </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U1D-pl-g9E">
@@ -1065,7 +1065,7 @@
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <connections>
-                                                <binding destination="wVf-kP-7TK" name="value" keyPath="values.act-power_unplug" id="H93-yz-ka0"/>
+                                                <binding destination="wVf-kP-7TK" name="value" keyPath="values.act_power_unplug" id="odb-Yf-FCX"/>
                                             </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h9a-UZ-Xsw">
