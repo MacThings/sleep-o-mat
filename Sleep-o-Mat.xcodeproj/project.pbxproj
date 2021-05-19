@@ -11,6 +11,7 @@
 		2AB27049265530A9001EB8C9 /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB27048265530A9001EB8C9 /* MainWindow.swift */; };
 		2AB2704B265530AA001EB8C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2704A265530AA001EB8C9 /* Assets.xcassets */; };
 		2AB2704E265530AA001EB8C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2704C265530AA001EB8C9 /* Main.storyboard */; };
+		2AB2705C265546E8001EB8C9 /* sleepwatcher in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2705B265546E8001EB8C9 /* sleepwatcher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		2AB2704D265530AA001EB8C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2AB2704F265530AA001EB8C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AB27050265530AA001EB8C9 /* Sleep_o_Mat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sleep_o_Mat.entitlements; sourceTree = "<group>"; };
+		2AB2705B265546E8001EB8C9 /* sleepwatcher */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = sleepwatcher; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,8 @@
 		2AB27045265530A9001EB8C9 /* Sleep-o-Mat */ = {
 			isa = PBXGroup;
 			children = (
+				2AB2705E2655470D001EB8C9 /* script */,
+				2AB2705A265546E8001EB8C9 /* bin */,
 				2AB27046265530A9001EB8C9 /* AppDelegate.swift */,
 				2AB27048265530A9001EB8C9 /* MainWindow.swift */,
 				2AB2704A265530AA001EB8C9 /* Assets.xcassets */,
@@ -61,6 +65,21 @@
 				2AB27050265530AA001EB8C9 /* Sleep_o_Mat.entitlements */,
 			);
 			path = "Sleep-o-Mat";
+			sourceTree = "<group>";
+		};
+		2AB2705A265546E8001EB8C9 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				2AB2705B265546E8001EB8C9 /* sleepwatcher */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		2AB2705E2655470D001EB8C9 /* script */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = script;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AB2705C265546E8001EB8C9 /* sleepwatcher in Resources */,
 				2AB2704B265530AA001EB8C9 /* Assets.xcassets in Resources */,
 				2AB2704E265530AA001EB8C9 /* Main.storyboard in Resources */,
 			);
@@ -275,13 +295,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4ATFWV7M4B;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = "Sleep-o-Mat/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "slsoft.de.Sleep-o-Mat";
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "slsoft.de.sleep-o-mat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -296,13 +317,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4ATFWV7M4B;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = "Sleep-o-Mat/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "slsoft.de.Sleep-o-Mat";
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "slsoft.de.sleep-o-mat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};

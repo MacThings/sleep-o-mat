@@ -11,6 +11,7 @@ class MainWindow: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.preferredContentSize = NSMakeSize(self.view.frame.size.width, self.view.frame.size.height);
 
         // Do any additional setup after loading the view.
     }
