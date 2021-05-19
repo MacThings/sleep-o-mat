@@ -712,7 +712,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pEV-ad-WJi">
                                 <rect key="frame" x="-2" y="261" width="564" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Powered by &quot;sleepwatcher&quot; © bernhard-baehr" id="oVw-YS-kSl">
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Powered by &quot;sleepwatcher&quot; © Bernhard Baehr" id="oVw-YS-kSl">
                                     <font key="font" metaFont="system" size="10"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -1089,82 +1089,109 @@
                                             <rect key="frame" x="259" y="6" width="5" height="238"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         </box>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="laF-uP-pOH">
+                                        <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="laF-uP-pOH">
                                             <rect key="frame" x="434" y="77" width="73" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Lds-xv-yP2">
+                                            <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="Lds-xv-yP2">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="miniSystem"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="browseFile_power_unplugWithSender:" target="XfG-lQ-9wD" id="RqL-Tv-Gwt"/>
+                                            </connections>
                                         </button>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cNa-lH-r6d">
+                                        <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cNa-lH-r6d">
                                             <rect key="frame" x="435" y="121" width="73" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="IAM-Q0-TI1">
+                                            <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="IAM-Q0-TI1">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="miniSystem"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="browseFile_power_plugWithSender:" target="XfG-lQ-9wD" id="aHo-RE-AAf"/>
+                                            </connections>
                                         </button>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z8l-HP-f9q">
+                                        <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z8l-HP-f9q">
                                             <rect key="frame" x="435" y="168" width="73" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="N4b-fv-ZOK">
+                                            <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="N4b-fv-ZOK">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="miniSystem"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="browseFile_user_resumeWithSender:" target="XfG-lQ-9wD" id="ipm-vL-8WC"/>
+                                            </connections>
                                         </button>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NDn-De-Lwa">
+                                        <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NDn-De-Lwa">
                                             <rect key="frame" x="434" y="215" width="73" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OeJ-eN-RMU">
+                                            <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="OeJ-eN-RMU">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="miniSystem"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="browseFile_user_idleWithSender:" target="XfG-lQ-9wD" id="wgu-bn-m08"/>
+                                            </connections>
                                         </button>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sxl-4F-sX6">
+                                        <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sxl-4F-sX6">
                                             <rect key="frame" x="173" y="33" width="73" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rV0-Oz-zSP">
+                                            <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="rV0-Oz-zSP">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="miniSystem"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="browseFile_display_sleepWithSender:" target="XfG-lQ-9wD" id="KaN-yg-9kI"/>
+                                            </connections>
                                         </button>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uCs-Z4-tV0">
+                                        <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uCs-Z4-tV0">
                                             <rect key="frame" x="173" y="77" width="73" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="M2a-3x-oyo">
+                                            <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="M2a-3x-oyo">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="miniSystem"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="browseFile_display_undimWithSender:" target="XfG-lQ-9wD" id="1iJ-mT-GmZ"/>
+                                            </connections>
                                         </button>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qKD-Ry-J44">
+                                        <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qKD-Ry-J44">
                                             <rect key="frame" x="174" y="121" width="73" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fHp-9F-9Q0">
+                                            <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="fHp-9F-9Q0">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="miniSystem"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="browseFile_display_dimWithSender:" target="XfG-lQ-9wD" id="hTI-kS-pVa"/>
+                                            </connections>
                                         </button>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aAU-iH-rPS">
+                                        <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aAU-iH-rPS">
                                             <rect key="frame" x="173" y="168" width="73" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="eKI-Jc-C8R">
+                                            <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="eKI-Jc-C8R">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="miniSystem"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="browseFile_system_wakeupWithSender:" target="XfG-lQ-9wD" id="yen-tX-uiV"/>
+                                            </connections>
                                         </button>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hok-fQ-P3B">
+                                        <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hok-fQ-P3B">
                                             <rect key="frame" x="173" y="215" width="73" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wPZ-UN-t3I">
+                                            <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="wPZ-UN-t3I">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="miniSystem"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="browseFile_system_sleepWithSender:" target="XfG-lQ-9wD" id="Web-6J-PJR"/>
+                                            </connections>
                                         </button>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0kZ-J1-aJp">
+                                        <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0kZ-J1-aJp">
                                             <rect key="frame" x="268" y="7" width="102" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="push" title="Run" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="UxA-hF-RQ3">
+                                            <buttonCell key="cell" type="push" title="Run" bezelStyle="rounded" alignment="center" borderStyle="border" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="UxA-hF-RQ3">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
@@ -1181,14 +1208,24 @@
                                             <rect key="frame" x="261" y="44" width="265" height="5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         </box>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ojX-nk-SH7">
+                                        <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ojX-nk-SH7">
                                             <rect key="frame" x="411" y="7" width="102" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="push" title="Install" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="HST-Nb-7RR">
+                                            <buttonCell key="cell" type="push" title="Install" bezelStyle="rounded" alignment="center" borderStyle="border" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="HST-Nb-7RR">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                         </button>
+                                        <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kt3-1d-DVH">
+                                            <rect key="frame" x="364" y="14" width="20" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSStatusUnavailable" id="noy-Ou-gD0"/>
+                                        </imageView>
+                                        <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z9o-qt-vPQ">
+                                            <rect key="frame" x="364" y="14" width="20" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSStatusAvailable" id="jpP-js-Ohj"/>
+                                        </imageView>
                                     </subviews>
                                 </view>
                             </box>
@@ -1203,6 +1240,20 @@
                             </textField>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="run_button" destination="0kZ-J1-aJp" id="tmt-av-Qlf"/>
+                        <outlet property="selected_display_dim_path" destination="cbR-70-0Ts" id="tO3-se-Xzj"/>
+                        <outlet property="selected_display_sleep_path" destination="eOG-EB-UL1" id="X9J-wX-xRG"/>
+                        <outlet property="selected_display_undim_path" destination="nTb-sM-rXa" id="pGB-9W-6s5"/>
+                        <outlet property="selected_power_plug_path" destination="Nc7-FX-Y5s" id="r9s-HT-HxL"/>
+                        <outlet property="selected_power_unplug_path" destination="oBQ-bB-A2b" id="FVA-VU-deZ"/>
+                        <outlet property="selected_system_sleep_path" destination="bwn-zw-mVp" id="Sa4-rU-wVe"/>
+                        <outlet property="selected_system_wakeup_path" destination="Hm0-SQ-lvj" id="cCH-Qn-Kab"/>
+                        <outlet property="selected_user_idle_path" destination="QzY-0k-dVZ" id="F82-2u-IhF"/>
+                        <outlet property="selected_user_resume_path" destination="jRq-5y-WKy" id="T4d-Mh-Obu"/>
+                        <outlet property="sw_not_running_dot" destination="kt3-1d-DVH" id="Std-ws-yeO"/>
+                        <outlet property="sw_running_dot" destination="z9o-qt-vPQ" id="UHG-eW-NI0"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <userDefaultsController representsSharedInstance="YES" id="wVf-kP-7TK"/>
@@ -1210,4 +1261,8 @@
             <point key="canvasLocation" x="115" y="678"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NSStatusAvailable" width="16" height="16"/>
+        <image name="NSStatusUnavailable" width="16" height="16"/>
+    </resources>
 </document>
