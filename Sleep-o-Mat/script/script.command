@@ -105,7 +105,7 @@ function start_sw()
         c3=$( echo "-D" "$display_dim_path" )
     fi
     if [[ "$act_display_undim" = "1" && "$display_undim_path" != "" ]]; then
-        c4=$( echo "E" "$display_undim_path" )
+        c4=$( echo "-E-" "$display_undim_path" )
     fi
     if [[ "$act_display_sleep" = "1" && "$display_sleep_path" != "" ]]; then
         c5=$( echo "-S" "$display_sleep_path" )
@@ -123,7 +123,9 @@ function start_sw()
         c9=$( echo "-U" "$power_unplug_path" )
     fi
     
-    options=$( echo "$c1" "$c2" "$c3" -"$c4" "$c5" "$c6" "$c7" "$c8" "$c9" | sed 's/\ \ /\ /g' )
+    options=$( echo "$c1" "$c2" "$c3" "$c4" "$c5" "$c6" "$c7" "$c8" "$c9" | sed -e 's/\ \ /\ /g' -e 's/-E-/-E/g' )
+
+    chmod +x "$system_sleep_path" "$system_wakeup_path" "$display_dim_path" "$display_undim_path" "$display_sleep_path" "$user_idle_path" "$user_resume_path" "$power_plug_path" "$power_unplug_path"
 
     ../bin/./sleepwatcher "$options" &
     

@@ -134,7 +134,7 @@ class MainWindow: NSViewController {
         dialog.canChooseDirectories    = true;
         dialog.canCreateDirectories    = true;
         dialog.allowsMultipleSelection = false;
-        dialog.allowedFileTypes        = ["pdf"];
+        //dialog.allowedFileTypes        = ["sh"];
         
         if (dialog.runModal() == NSApplication.ModalResponse.OK) {
             let result = dialog.url // Pathname of the file
@@ -163,7 +163,7 @@ class MainWindow: NSViewController {
         dialog.canChooseDirectories    = true;
         dialog.canCreateDirectories    = true;
         dialog.allowsMultipleSelection = false;
-        dialog.allowedFileTypes        = ["pdf"];
+        //dialog.allowedFileTypes        = ["sh"];
         
         if (dialog.runModal() == NSApplication.ModalResponse.OK) {
             let result = dialog.url // Pathname of the file
@@ -192,7 +192,7 @@ class MainWindow: NSViewController {
         dialog.canChooseDirectories    = true;
         dialog.canCreateDirectories    = true;
         dialog.allowsMultipleSelection = false;
-        dialog.allowedFileTypes        = ["pdf"];
+        //dialog.allowedFileTypes        = ["sh"];
         
         if (dialog.runModal() == NSApplication.ModalResponse.OK) {
             let result = dialog.url // Pathname of the file
@@ -221,7 +221,7 @@ class MainWindow: NSViewController {
         dialog.canChooseDirectories    = true;
         dialog.canCreateDirectories    = true;
         dialog.allowsMultipleSelection = false;
-        dialog.allowedFileTypes        = ["pdf"];
+        //dialog.allowedFileTypes        = ["sh"];
         
         if (dialog.runModal() == NSApplication.ModalResponse.OK) {
             let result = dialog.url // Pathname of the file
@@ -250,7 +250,7 @@ class MainWindow: NSViewController {
         dialog.canChooseDirectories    = true;
         dialog.canCreateDirectories    = true;
         dialog.allowsMultipleSelection = false;
-        dialog.allowedFileTypes        = ["pdf"];
+        //dialog.allowedFileTypes        = ["sh"];
         
         if (dialog.runModal() == NSApplication.ModalResponse.OK) {
             let result = dialog.url // Pathname of the file
@@ -279,7 +279,7 @@ class MainWindow: NSViewController {
         dialog.canChooseDirectories    = true;
         dialog.canCreateDirectories    = true;
         dialog.allowsMultipleSelection = false;
-        dialog.allowedFileTypes        = ["pdf"];
+        //dialog.allowedFileTypes        = ["sh"];
         
         if (dialog.runModal() == NSApplication.ModalResponse.OK) {
             let result = dialog.url // Pathname of the file
@@ -308,7 +308,7 @@ class MainWindow: NSViewController {
         dialog.canChooseDirectories    = true;
         dialog.canCreateDirectories    = true;
         dialog.allowsMultipleSelection = false;
-        dialog.allowedFileTypes        = ["pdf"];
+        //dialog.allowedFileTypes        = ["sh"];
         
         if (dialog.runModal() == NSApplication.ModalResponse.OK) {
             let result = dialog.url // Pathname of the file
@@ -337,7 +337,7 @@ class MainWindow: NSViewController {
         dialog.canChooseDirectories    = true;
         dialog.canCreateDirectories    = true;
         dialog.allowsMultipleSelection = false;
-        dialog.allowedFileTypes        = ["pdf"];
+        //dialog.allowedFileTypes        = ["sh"];
         
         if (dialog.runModal() == NSApplication.ModalResponse.OK) {
             let result = dialog.url // Pathname of the file
@@ -366,7 +366,7 @@ class MainWindow: NSViewController {
         dialog.canChooseDirectories    = true;
         dialog.canCreateDirectories    = true;
         dialog.allowsMultipleSelection = false;
-        dialog.allowedFileTypes        = ["pdf"];
+        //dialog.allowedFileTypes        = ["sh"];
         
         if (dialog.runModal() == NSApplication.ModalResponse.OK) {
             let result = dialog.url // Pathname of the file
