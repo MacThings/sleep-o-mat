@@ -32,7 +32,10 @@ fi
     
     display_sleep_path=$( _helpDefaultRead "display_sleep_path" )
     act_display_sleep=$( _helpDefaultRead "act_display_sleep" )
-    
+
+    display_wakeup_path=$( _helpDefaultRead "display_wakeup_path" )
+    act_display_wakeup=$( _helpDefaultRead "act_display_wakeup" )
+
     user_idle_path=$( _helpDefaultRead "user_idle_path" )
     act_user_idle=$( _helpDefaultRead "act_user_idle" )
     
@@ -59,6 +62,9 @@ fi
     fi
     if [[ "$act_display_sleep" = "1" && "$display_sleep_path" != "" ]]; then
         c5=$( echo "-S" "$display_sleep_path" )
+    fi
+    if [[ "$act_display_wakeup" = "1" && "$display_wakeup_path" != "" ]]; then
+        c5=$( echo "-W" "$display_wakeup_path" )
     fi
     if [[ "$act_user_idle" = "1" && "$user_idle_path" != "" ]]; then
         c6=$( echo "-i" "$user_idle_path" )
@@ -137,6 +143,15 @@ function start_sw()
     chmod +x "$system_sleep_path" "$system_wakeup_path" "$display_dim_path" "$display_undim_path" "$display_sleep_path" "$user_idle_path" "$user_resume_path" "$power_plug_path" "$power_unplug_path"
 
     ../bin/./sleepwatcher "$options" &
+}
+
+function template_system_sleep()
+{
+    mkdir "$ScriptHome"/.sleepomat
+    cp ../config/sleep.sh "$ScriptHome"/.sleepomat/.
+    plist_string=$( echo "$ScriptHome"/.sleepomat/sleep.sh )
+    _helpDefaultWrite "system_sleep_path" "$plist_string"
+    
 }
 
 function install_daemon()

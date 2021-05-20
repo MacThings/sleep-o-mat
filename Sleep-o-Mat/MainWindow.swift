@@ -17,6 +17,7 @@ class MainWindow: NSViewController {
     @IBOutlet weak var selected_display_undim_path: NSTextField!
     @IBOutlet weak var selected_display_sleep_path: NSTextField!
     
+    @IBOutlet weak var selected_display_wakeup_path: NSTextField!
     @IBOutlet weak var selected_user_idle_path: NSTextField!
     @IBOutlet weak var selected_user_resume_path: NSTextField!
     @IBOutlet weak var selected_power_plug_path: NSTextField!
@@ -70,7 +71,7 @@ class MainWindow: NSViewController {
             selected_system_sleep_path.stringValue = lastElement!
         }
         let system_wakeup_path = UserDefaults.standard.string(forKey: "system_wakeup_path")
-        if system_sleep_path != nil{
+        if system_wakeup_path != nil{
             let splitter = system_wakeup_path!.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
             let lastElement = splitter.last
             selected_system_wakeup_path.stringValue = lastElement!
@@ -92,6 +93,12 @@ class MainWindow: NSViewController {
             let splitter = display_sleep_path!.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
             let lastElement = splitter.last
             selected_display_sleep_path.stringValue = lastElement!
+        }
+        let display_wakeup_path = UserDefaults.standard.string(forKey: "display_wakeup_path")
+        if display_wakeup_path != nil{
+            let splitter = display_wakeup_path!.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
+            let lastElement = splitter.last
+            selected_display_wakeup_path.stringValue = lastElement!
         }
         let user_idle_path = UserDefaults.standard.string(forKey: "user_idle_path")
         if user_idle_path != nil{
@@ -173,6 +180,17 @@ class MainWindow: NSViewController {
         run_check()
     }
     
+    @IBAction func template_system_sleep(_ sender: Any) {
+        syncShellExec(path: scriptPath, args: ["template_system_sleep"])
+        let template = UserDefaults.standard.string(forKey: "system_sleep_path")
+        if template != nil{
+            let splitter = template!.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
+            let lastElement = splitter.last
+            selected_system_sleep_path.stringValue = lastElement!
+        }
+    }
+    
+
     @IBAction func browseFile_system_sleep(sender: AnyObject) {
         
         let dialog = NSOpenPanel();
@@ -318,6 +336,35 @@ class MainWindow: NSViewController {
         }
     }
 
+    @IBAction func browseFile_display_wakeup(sender: AnyObject) {
+        
+        let dialog = NSOpenPanel();
+        
+        dialog.title                   = "Choose a Folder";
+        dialog.showsResizeIndicator    = true;
+        dialog.showsHiddenFiles        = false;
+        dialog.canChooseDirectories    = true;
+        dialog.canCreateDirectories    = true;
+        dialog.allowsMultipleSelection = false;
+        //dialog.allowedFileTypes        = ["sh"];
+        
+        if (dialog.runModal() == NSApplication.ModalResponse.OK) {
+            let result = dialog.url // Pathname of the file
+            
+            if (result != nil) {
+                let path = result!.path
+                let splitter = path.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
+                let lastElement = splitter.last
+                selected_display_wakeup_path.stringValue = lastElement!
+                let savepath = (path as String)
+                UserDefaults.standard.set(savepath, forKey: "display_wakeup_path")
+            }
+        } else {
+            // User clicked on "Cancel"
+            return
+        }
+    }
+    
     @IBAction func browseFile_user_idle(sender: AnyObject) {
         
         let dialog = NSOpenPanel();
