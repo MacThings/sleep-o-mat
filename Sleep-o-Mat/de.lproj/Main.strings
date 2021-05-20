@@ -89,13 +89,13 @@
 "Dv1-io-Yv7.title" = "Spelling and Grammar";
 
 /* Class = "NSButtonCell"; title = "Select"; ObjectID = "eKI-Jc-C8R"; */
-"eKI-Jc-C8R.title" = "Auswählen";
+"eKI-Jc-C8R.title" = "Auswahl";
 
 /* Class = "NSMenu"; title = "Substitutions"; ObjectID = "FeM-D8-WVr"; */
 "FeM-D8-WVr.title" = "Substitutions";
 
 /* Class = "NSButtonCell"; title = "Select"; ObjectID = "fHp-9F-9Q0"; */
-"fHp-9F-9Q0.title" = "Auswählen";
+"fHp-9F-9Q0.title" = "Auswahl";
 
 /* Class = "NSMenuItem"; title = "Paste"; ObjectID = "gVA-U4-sdL"; */
 "gVA-U4-sdL.title" = "Paste";
@@ -116,7 +116,7 @@
 "hz2-CU-CR7.title" = "Check Document Now";
 
 /* Class = "NSButtonCell"; title = "Select"; ObjectID = "IAM-Q0-TI1"; */
-"IAM-Q0-TI1.title" = "Auswählen";
+"IAM-Q0-TI1.title" = "Auswahl";
 
 /* Class = "NSWindow"; title = "Window"; ObjectID = "IQv-IB-iLA"; */
 "IQv-IB-iLA.title" = "Window";
@@ -140,19 +140,19 @@
 "l1h-oY-3ot.ibShadowedToolTip" = "Führt einen Befehl aus wenn der Mac mit dem Netzteil verbunden wird.";
 
 /* Class = "NSButtonCell"; title = "Select"; ObjectID = "Lds-xv-yP2"; */
-"Lds-xv-yP2.title" = "Auswählen";
+"Lds-xv-yP2.title" = "Auswahl";
 
 /* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ"; */
 "LE2-aR-0XJ.title" = "Alle nach vorne holen";
 
 /* Class = "NSButtonCell"; title = "Select"; ObjectID = "M2a-3x-oyo"; */
-"M2a-3x-oyo.title" = "Auswählen";
+"M2a-3x-oyo.title" = "Auswahl";
 
 /* Class = "NSMenuItem"; title = "Check Grammar With Spelling"; ObjectID = "mK6-2p-4JG"; */
 "mK6-2p-4JG.title" = "Check Grammar With Spelling";
 
 /* Class = "NSButtonCell"; title = "Select"; ObjectID = "N4b-fv-ZOK"; */
-"N4b-fv-ZOK.title" = "Auswählen";
+"N4b-fv-ZOK.title" = "Auswahl";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Execute command when the display of the Mac is undimmed (without having gone to sleep)."; ObjectID = "NT3-Hr-bx8"; */
 "NT3-Hr-bx8.ibShadowedToolTip" = "Führt einen Befehl aus wenn das Display des Macs nicht gedimmt ist (ohne das der Mac in den Schlafmodus geht).";
@@ -161,7 +161,7 @@
 "ntq-sr-cF8.title" = "Benutzer setzt fort";
 
 /* Class = "NSButtonCell"; title = "Select"; ObjectID = "OeJ-eN-RMU"; */
-"OeJ-eN-RMU.title" = "Auswählen";
+"OeJ-eN-RMU.title" = "Auswahl";
 
 /* Class = "NSMenuItem"; title = "Hide Sleep-o-Mat"; ObjectID = "Olw-nP-bQN"; */
 "Olw-nP-bQN.title" = "Sleep-o-Mat ausblenden";
@@ -200,7 +200,7 @@
 "Ruw-6m-B2m.title" = "Select All";
 
 /* Class = "NSButtonCell"; title = "Select"; ObjectID = "rV0-Oz-zSP"; */
-"rV0-Oz-zSP.title" = "Auswählen";
+"rV0-Oz-zSP.title" = "Auswahl";
 
 /* Class = "NSMenuItem"; title = "Jump to Selection"; ObjectID = "S0p-oC-mLd"; */
 "S0p-oC-mLd.title" = "Jump to Selection";
@@ -254,7 +254,7 @@
 "wpr-3q-Mcd.title" = "Help";
 
 /* Class = "NSButtonCell"; title = "Select"; ObjectID = "wPZ-UN-t3I"; */
-"wPZ-UN-t3I.title" = "Auswählen";
+"wPZ-UN-t3I.title" = "Auswahl";
 
 /* Class = "NSMenuItem"; title = "Copy"; ObjectID = "x3v-GG-iWU"; */
 "x3v-GG-iWU.title" = "Copy";
