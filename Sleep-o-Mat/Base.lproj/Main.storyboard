@@ -1234,13 +1234,22 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h2C-X2-T9P">
+                                <rect key="frame" x="443" y="264" width="80" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Daemon mode" id="3fM-qI-bFO">
+                                    <font key="font" metaFont="system" size="11"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="40t-Zo-NMH">
                                 <rect key="frame" x="20" y="263" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSApplicationIcon" id="TNL-9M-nPa"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bqO-20-aOf">
-                                <rect key="frame" x="486" y="261" width="38" height="14"/>
+                                <rect key="frame" x="485" y="279" width="38" height="14"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Status" id="uvj-d3-pWC">
                                     <font key="font" metaFont="system" size="11"/>
@@ -1248,19 +1257,20 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z9o-qt-vPQ">
-                                <rect key="frame" x="524" y="258" width="20" height="20"/>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z9o-qt-vPQ">
+                                <rect key="frame" x="523" y="276" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSStatusAvailable" id="jpP-js-Ohj"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="jpP-js-Ohj"/>
                             </imageView>
-                            <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kt3-1d-DVH">
-                                <rect key="frame" x="524" y="258" width="20" height="20"/>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kt3-1d-DVH">
+                                <rect key="frame" x="523" y="261" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSStatusUnavailable" id="noy-Ou-gD0"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="noy-Ou-gD0"/>
                             </imageView>
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="dm_running_dot" destination="kt3-1d-DVH" id="HBi-Na-M7B"/>
                         <outlet property="install_daemon" destination="ojX-nk-SH7" id="tI2-Wu-t8v"/>
                         <outlet property="run_button" destination="0kZ-J1-aJp" id="tmt-av-Qlf"/>
                         <outlet property="selected_display_dim_path" destination="cbR-70-0Ts" id="tO3-se-Xzj"/>
@@ -1284,7 +1294,5 @@
     </scenes>
     <resources>
         <image name="NSApplicationIcon" width="32" height="32"/>
-        <image name="NSStatusAvailable" width="16" height="16"/>
-        <image name="NSStatusUnavailable" width="16" height="16"/>
     </resources>
 </document>
