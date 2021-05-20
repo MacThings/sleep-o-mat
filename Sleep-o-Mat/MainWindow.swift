@@ -27,6 +27,9 @@ class MainWindow: NSViewController {
     @IBOutlet weak var sw_running_dot: NSImageView!
     @IBOutlet weak var sw_not_running_dot: NSImageView!
     
+    @IBOutlet weak var install_daemon: NSButton!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -109,18 +112,41 @@ class MainWindow: NSViewController {
             self.sw_not_running_dot.isHidden = false
             self.run_button.title = NSLocalizedString("Run", comment: "")
         }
+        
+        let dm_running = UserDefaults.standard.bool(forKey: "daemon_running")
+        if dm_running == true{
+            self.install_daemon.title = NSLocalizedString("Uninstall", comment: "")
+            self.run_button.title = NSLocalizedString("Reload", comment: "")
+        } else {
+            self.install_daemon.title = NSLocalizedString("Install", comment: "")
+        }
     }
     
+    @IBAction func install_daemon(_ sender: Any) {
+        syncShellExec(path: scriptPath, args: ["kill_sw"])
+        let dm_running = UserDefaults.standard.bool(forKey: "daemon_running")
+        if dm_running == true{
+            syncShellExec(path: scriptPath, args: ["uninstall_daemon"])
+            run_check()
+        } else {
+            syncShellExec(path: scriptPath, args: ["install_daemon"])
+            run_check()
+        }
+    }
     
     @IBAction func start_stop_sw(_ sender: Any) {
         run_check()
-        let sw_running = UserDefaults.standard.bool(forKey: "sleepwatcher_running")
-        if sw_running == true{
-            syncShellExec(path: scriptPath, args: ["kill_sw"])
+        let dm_running = UserDefaults.standard.bool(forKey: "daemon_running")
+        if dm_running != true{
+            let sw_running = UserDefaults.standard.bool(forKey: "sleepwatcher_running")
+            if sw_running == true{
+                syncShellExec(path: scriptPath, args: ["kill_sw"])
+            } else {
+                syncShellExec(path: scriptPath, args: ["start_sw"])
+            }
         } else {
-            syncShellExec(path: scriptPath, args: ["start_sw"])
+            syncShellExec(path: scriptPath, args: ["reload_daemon"])
         }
-        
         run_check()
     }
     

@@ -7,10 +7,9 @@
 	<key>Label</key>
 	<string>de.bernhard-baehr.sleepwatcher</string>
 	<key>ProgramArguments</key>
-	<dict>
-		<key>Item0</key>
+	<array>
 		<string>/usr/local/bin/sleepwatcher</string>
-	</dict>
+	</array>
 	<key>RunAtLoad</key>
 	<true/>
 </dict>

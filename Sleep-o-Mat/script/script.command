@@ -18,56 +18,6 @@ if [ ! -d "$ScriptTmpPath" ]; then
     mkdir "$ScriptTmpPath"
 fi
 
-################################################################
-####################### Helper Function ########################
-################################################################
-
-function _helpDefaultWrite()
-{
-    VAL=$1
-    local VAL1=$2
-
-    if [ ! -z "$VAL" ] || [ ! -z "$VAL1" ]; then
-    defaults write "${ScriptHome}/Library/Preferences/sleep-o-mat.slsoft.de.plist" "$VAL" "$VAL1"
-    fi
-}
-
-function _helpDefaultWriteBool()
-{
-    VAL=$1
-    local VAL1=$2
-
-    if [ ! -z "$VAL" ] || [ ! -z "$VAL1" ]; then
-    defaults write "${ScriptHome}/Library/Preferences/sleep-o-mat.slsoft.de.plist" "$VAL1" -bool $VAL
-    fi
-}
-
-function _helpDefaultDelete()
-{
-    VAL=$1
-
-    if [ ! -z "$VAL" ]; then
-    defaults delete "${ScriptHome}/Library/Preferences/sleep-o-mat.slsoft.de.plist" "$VAL"
-    fi
-}
-
-function run_check()
-{
-    run_check=$( ps ax |grep sleepwatcher | grep -v grep )
-    if [[ "$?" = "0" ]]; then
-        _helpDefaultWriteBool YES "sleepwatcher_running"
-    else
-        _helpDefaultWriteBool NO "sleepwatcher_running"
-    fi
-}
-
-function kill_sw()
-{
-    pkill -f sleepwatcher
-}
-
-function start_sw()
-{
     system_sleep_path=$( _helpDefaultRead "system_sleep_path" )
     act_system_sleep=$( _helpDefaultRead "act_system_sleep" )
     
@@ -123,14 +73,100 @@ function start_sw()
         c9=$( echo "-U" "$power_unplug_path" )
     fi
     
-    options=$( echo "$c1" "$c2" "$c3" "$c4" "$c5" "$c6" "$c7" "$c8" "$c9" | sed -e 's/\ \ /\ /g' -e 's/-E-/-E/g' )
+    options=$( echo "$c1" "$c2" "$c3" "$c4" "$c5" "$c6" "$c7" "$c8" "$c9" | sed -e 's/\ \ /\ /g' -e 's/-E-/-E/g' |xargs )
 
+    
+
+################################################################
+####################### Helper Function ########################
+################################################################
+
+function _helpDefaultWrite()
+{
+    VAL=$1
+    local VAL1=$2
+
+    if [ ! -z "$VAL" ] || [ ! -z "$VAL1" ]; then
+    defaults write "${ScriptHome}/Library/Preferences/sleep-o-mat.slsoft.de.plist" "$VAL" "$VAL1"
+    fi
+}
+
+function _helpDefaultWriteBool()
+{
+    VAL=$1
+    local VAL1=$2
+
+    if [ ! -z "$VAL" ] || [ ! -z "$VAL1" ]; then
+    defaults write "${ScriptHome}/Library/Preferences/sleep-o-mat.slsoft.de.plist" "$VAL1" -bool $VAL
+    fi
+}
+
+function _helpDefaultDelete()
+{
+    VAL=$1
+
+    if [ ! -z "$VAL" ]; then
+    defaults delete "${ScriptHome}/Library/Preferences/sleep-o-mat.slsoft.de.plist" "$VAL"
+    fi
+}
+
+function run_check()
+{
+    run_check=$( ps ax |grep sleepwatcher | grep -v grep )
+    if [[ "$?" = "0" ]]; then
+        _helpDefaultWriteBool YES "sleepwatcher_running"
+    else
+        _helpDefaultWriteBool NO "sleepwatcher_running"
+    fi
+    
+    run_check=$( launchctl list |grep sleepwatcher )
+    if [[ "$run_check" = "" ]]; then
+        _helpDefaultWriteBool NO "daemon_running"
+    else
+        _helpDefaultWriteBool YES "daemon_running"
+    fi
+}
+
+function kill_sw()
+{
+    pkill -f sleepwatcher
+}
+
+function start_sw()
+{
     chmod +x "$system_sleep_path" "$system_wakeup_path" "$display_dim_path" "$display_undim_path" "$display_sleep_path" "$user_idle_path" "$user_resume_path" "$power_plug_path" "$power_unplug_path"
 
     ../bin/./sleepwatcher "$options" &
+}
+
+function install_daemon()
+{
+    if [ ! -f /usr/local/bin/sleepwatcher ]; then
+        cp ../bin/sleepwatcher /usr/local/bin/.
+        chmod +x /usr/local/bin/sleepwatcher
+    fi
     
-    #../PlistBuddy -c "Delete ProgramArguments" de.bernhard-baehr.sleepwatcher-20compatibility.plist
-    #../PlistBuddy -c "Add :ProgramArguments:Item0 string /usr/local/bin/sleepwatcher" de.bernhard-baehr.sleepwatcher-20compatibility.plist
+    cp ../config/de.bernhard-baehr.sleepwatcher.plist "$ScriptHome"/Library/LaunchAgents/.
+    
+    #../bin/PlistBuddy -c "Delete ProgramArguments" "$ScriptHome"/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher.plist
+    ../bin/PlistBuddy -c "Add ProgramArguments: string $options" "$ScriptHome"/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher.plist
+    
+    launchctl load -w "$ScriptHome"/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher.plist
+}
+
+function reload_daemon()
+{
+    launchctl unload -w "$ScriptHome"/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher.plist
+    kill_sw
+    cp -f ../config/de.bernhard-baehr.sleepwatcher.plist "$ScriptHome"/Library/LaunchAgents/.
+    ../bin/PlistBuddy -c "Add ProgramArguments: string $options" "$ScriptHome"/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher.plist
+    launchctl load -w "$ScriptHome"/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher.plist
+}
+
+function uninstall_daemon()
+{
+    launchctl unload -w "$ScriptHome"/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher.plist
+    rm "$ScriptHome"/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher.plist
 }
 
 $1

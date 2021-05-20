@@ -1218,6 +1218,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="install_daemon:" target="XfG-lQ-9wD" id="ZWt-M4-o5N"/>
+                                            </connections>
                                         </button>
                                         <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kt3-1d-DVH">
                                             <rect key="frame" x="364" y="14" width="20" height="20"/>
@@ -1249,6 +1252,7 @@
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="install_daemon" destination="ojX-nk-SH7" id="tI2-Wu-t8v"/>
                         <outlet property="run_button" destination="0kZ-J1-aJp" id="tmt-av-Qlf"/>
                         <outlet property="selected_display_dim_path" destination="cbR-70-0Ts" id="tO3-se-Xzj"/>
                         <outlet property="selected_display_sleep_path" destination="eOG-EB-UL1" id="X9J-wX-xRG"/>
