@@ -73,7 +73,8 @@ class MainWindow: NSViewController {
         if text_editor2 != nil{
             let splitter = text_editor2!.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
             let lastElement = splitter.last
-            text_editor.stringValue = lastElement!
+            let name = (lastElement! as NSString).deletingPathExtension
+            text_editor.stringValue = name
         } else {
             text_editor.stringValue = "TextEdit"
             UserDefaults.standard.set("TextEdit", forKey: "TextEditor")
