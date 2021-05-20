@@ -11,7 +11,12 @@ class MainWindow: NSViewController {
     
     let scriptPath = Bundle.main.path(forResource: "/script/script", ofType: "command")!
     
+    
+    @IBOutlet weak var text_editor: NSTextField!
+    
     @IBOutlet weak var selected_system_sleep_path: NSTextField!
+    @IBOutlet weak var selected_system_sleep_path_edit: NSButton!
+
     @IBOutlet weak var selected_system_wakeup_path: NSTextField!
     @IBOutlet weak var selected_display_dim_path: NSTextField!
     @IBOutlet weak var selected_display_undim_path: NSTextField!
@@ -64,11 +69,21 @@ class MainWindow: NSViewController {
     }
     
     func init_check() {
+        let text_editor2 = UserDefaults.standard.string(forKey: "TextEditor")
+        if text_editor2 != nil{
+            let splitter = text_editor2!.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
+            let lastElement = splitter.last
+            text_editor.stringValue = lastElement!
+        } else {
+            text_editor.stringValue = "TextEdit"
+            UserDefaults.standard.set("TextEdit", forKey: "TextEditor")
+        }
         let system_sleep_path = UserDefaults.standard.string(forKey: "system_sleep_path")
         if system_sleep_path != nil{
             let splitter = system_sleep_path!.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
             let lastElement = splitter.last
             selected_system_sleep_path.stringValue = lastElement!
+            selected_system_sleep_path_edit.isEnabled = true
         }
         let system_wakeup_path = UserDefaults.standard.string(forKey: "system_wakeup_path")
         if system_wakeup_path != nil{
@@ -190,7 +205,12 @@ class MainWindow: NSViewController {
         }
     }
     
-
+    @IBAction func edit_system_sleep(_ sender: Any) {
+        let file = UserDefaults.standard.string(forKey: "system_sleep_path")
+        let text_editor = UserDefaults.standard.string(forKey: "TextEditor")
+        NSWorkspace.shared.openFile(file!, withApplication: text_editor)
+    }
+    
     @IBAction func browseFile_system_sleep(sender: AnyObject) {
         
         let dialog = NSOpenPanel();
@@ -474,6 +494,35 @@ class MainWindow: NSViewController {
                 selected_power_unplug_path.stringValue = lastElement!
                 let savepath = (path as String)
                 UserDefaults.standard.set(savepath, forKey: "power_unplug_path")
+            }
+        } else {
+            // User clicked on "Cancel"
+            return
+        }
+    }
+    
+    @IBAction func browseFile_text_editor(sender: AnyObject) {
+        
+        let dialog = NSOpenPanel();
+        
+        dialog.title                   = "Choose a Text editor";
+        dialog.showsResizeIndicator    = true;
+        dialog.showsHiddenFiles        = false;
+        dialog.canChooseDirectories    = true;
+        dialog.canCreateDirectories    = false;
+        dialog.allowsMultipleSelection = false;
+        dialog.allowedFileTypes        = ["app"];
+        
+        if (dialog.runModal() == NSApplication.ModalResponse.OK) {
+            let result = dialog.url // Pathname of the file
+            
+            if (result != nil) {
+                let path = result!.path
+                let splitter = path.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
+                let lastElement = splitter.last
+                let name = (lastElement! as NSString).deletingPathExtension
+                text_editor.stringValue = name
+                UserDefaults.standard.set(path, forKey: "TextEditor")
             }
         } else {
             // User clicked on "Cancel"
