@@ -58,6 +58,9 @@
 /* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
 "AYu-sK-qS6.title" = "Hauptmenu";
 
+/* Class = "NSViewController"; title = "About"; ObjectID = "bHD-BC-pbq"; */
+"bHD-BC-pbq.title" = "Über";
+
 /* Class = "NSMenuItem"; title = "Check for updates"; ObjectID = "BOF-NM-1cW"; */
 "BOF-NM-1cW.title" = "Auf Updates prüfen";
 

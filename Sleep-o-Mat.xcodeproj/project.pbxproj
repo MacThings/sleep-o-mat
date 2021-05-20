@@ -14,6 +14,7 @@
 		2A87837C26557A7800CEBBBF /* wakeup.sh in config */ = {isa = PBXBuildFile; fileRef = 2A87837126557A4F00CEBBBF /* wakeup.sh */; };
 		2A87838326558BC900CEBBBF /* PlistBuddy in bin */ = {isa = PBXBuildFile; fileRef = 2A87837F26558BB700CEBBBF /* PlistBuddy */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2A8783A22656885D00CEBBBF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A8783A02656885D00CEBBBF /* Localizable.strings */; };
+		2A8783AD26568F1800CEBBBF /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8783AC26568F1800CEBBBF /* About.swift */; };
 		2AB27047265530A9001EB8C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB27046265530A9001EB8C9 /* AppDelegate.swift */; };
 		2AB27049265530A9001EB8C9 /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB27048265530A9001EB8C9 /* MainWindow.swift */; };
 		2AB2704B265530AA001EB8C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2704A265530AA001EB8C9 /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		2A8783972656801B00CEBBBF /* sleepomat.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = sleepomat.html; sourceTree = "<group>"; };
 		2A87839F265682DE00CEBBBF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		2A8783A12656885D00CEBBBF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2A8783AC26568F1800CEBBBF /* About.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 		2AB27043265530A9001EB8C9 /* Sleep-o-Mat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleep-o-Mat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AB27046265530A9001EB8C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AB27048265530A9001EB8C9 /* MainWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			children = (
 				2AB2705E2655470D001EB8C9 /* script */,
 				2AB2705A265546E8001EB8C9 /* bin */,
+				2A8783AC26568F1800CEBBBF /* About.swift */,
 				2AB27046265530A9001EB8C9 /* AppDelegate.swift */,
 				2AB27048265530A9001EB8C9 /* MainWindow.swift */,
 				2AB2704A265530AA001EB8C9 /* Assets.xcassets */,
@@ -312,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AB27049265530A9001EB8C9 /* MainWindow.swift in Sources */,
+				2A8783AD26568F1800CEBBBF /* About.swift in Sources */,
 				2AB27047265530A9001EB8C9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,6 +20,7 @@
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
+                                                <segue destination="bHD-BC-pbq" kind="show" id="9UC-Ip-j3y"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
@@ -929,6 +930,48 @@
                 <userDefaultsController representsSharedInstance="YES" id="wVf-kP-7TK"/>
             </objects>
             <point key="canvasLocation" x="115" y="678"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="Hv3-h9-Ajh">
+            <objects>
+                <viewController title="About" id="bHD-BC-pbq" customClass="About" customModule="Sleep_o_Mat" sceneMemberID="viewController">
+                    <view key="view" id="doX-nd-Ue0">
+                        <rect key="frame" x="0.0" y="0.0" width="248" height="244"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HbY-sd-DIh">
+                                <rect key="frame" x="-2" y="34" width="252" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Label" id="yky-Xs-MBm">
+                                    <font key="font" metaFont="systemBold" size="15"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OpP-XF-BJI">
+                                <rect key="frame" x="40" y="70" width="170" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSApplicationIcon" id="cee-Za-JJS"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UQl-5g-gOi">
+                                <rect key="frame" x="0.0" y="58" width="250" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Label" id="LaK-SX-9lx">
+                                    <font key="font" metaFont="cellTitle"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="copyright" destination="HbY-sd-DIh" id="hmj-XB-JOB"/>
+                        <outlet property="version" destination="UQl-5g-gOi" id="ksY-9v-0r8"/>
+                    </connections>
+                </viewController>
+                <customObject id="eJH-YY-TIi" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-353" y="212"/>
         </scene>
     </scenes>
     <resources>
