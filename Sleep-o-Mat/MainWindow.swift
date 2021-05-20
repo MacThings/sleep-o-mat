@@ -27,6 +27,7 @@ class MainWindow: NSViewController {
     @IBOutlet weak var sw_running_dot: NSImageView!
     @IBOutlet weak var sw_not_running_dot: NSImageView!
     
+    
     @IBOutlet weak var install_daemon: NSButton!
     
     
@@ -91,7 +92,24 @@ class MainWindow: NSViewController {
             let lastElement = splitter.last
             selected_power_unplug_path.stringValue = lastElement!
         }
+        let alert_init = UserDefaults.standard.string(forKey: "alert_check")
+        if alert_init != nil{
+            UserDefaults.standard.set(false, forKey: "AlertShown")
+        }
         
+        let alert_check = UserDefaults.standard.bool(forKey: "AlertShown")
+        if alert_check == false {
+            let alert = NSAlert()
+            alert.messageText = NSLocalizedString("Important!", comment: "")
+            alert.informativeText = NSLocalizedString("If you make changes please make sure to press the Start/Stop button (or if sleepwatcher is running in daemon mode press Reload) to take the changes affect.", comment: "")
+            alert.alertStyle = .warning
+            alert.icon = NSImage(named: "applied")
+            let Button = NSLocalizedString("I understand", comment: "")
+            alert.addButton(withTitle: Button)
+            alert.runModal()
+            UserDefaults.standard.set(true, forKey: "AlertShown")
+            return
+        }
     }
 
     override var representedObject: Any? {
