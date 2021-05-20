@@ -378,7 +378,7 @@
                                             </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RCe-il-JbT">
-                                            <rect key="frame" x="53" y="215" width="99" height="16"/>
+                                            <rect key="frame" x="53" y="215" width="122" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="System sleep" id="Vxp-FE-ORv">
                                                 <font key="font" metaFont="smallSystem"/>
@@ -418,7 +418,7 @@
                                             </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PTr-dG-Pji">
-                                            <rect key="frame" x="53" y="168" width="99" height="16"/>
+                                            <rect key="frame" x="53" y="168" width="122" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="System wakeup" id="yJz-Ds-Olm">
                                                 <font key="font" metaFont="smallSystem"/>
@@ -458,7 +458,7 @@
                                             </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9qs-8O-rfM">
-                                            <rect key="frame" x="53" y="121" width="99" height="16"/>
+                                            <rect key="frame" x="53" y="121" width="122" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="Display dim" id="upJ-AT-2WB">
                                                 <font key="font" metaFont="smallSystem"/>
@@ -498,7 +498,7 @@
                                             </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="opK-o9-a41">
-                                            <rect key="frame" x="53" y="77" width="99" height="16"/>
+                                            <rect key="frame" x="53" y="77" width="128" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="Display undim" id="8wZ-Co-Ib6">
                                                 <font key="font" metaFont="smallSystem"/>
@@ -538,7 +538,7 @@
                                             </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B5c-qA-FbF">
-                                            <rect key="frame" x="53" y="33" width="99" height="16"/>
+                                            <rect key="frame" x="53" y="33" width="128" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="Display sleep" id="jT3-vS-Toc">
                                                 <font key="font" metaFont="smallSystem"/>
@@ -578,7 +578,7 @@
                                             </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zoK-YV-5WT">
-                                            <rect key="frame" x="315" y="215" width="99" height="16"/>
+                                            <rect key="frame" x="315" y="215" width="123" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="User idle" id="k6V-JJ-HEa">
                                                 <font key="font" metaFont="smallSystem"/>
@@ -618,7 +618,7 @@
                                             </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gIa-5R-NKM">
-                                            <rect key="frame" x="315" y="168" width="99" height="16"/>
+                                            <rect key="frame" x="315" y="168" width="121" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="User resume" id="ntq-sr-cF8">
                                                 <font key="font" metaFont="smallSystem"/>
@@ -698,7 +698,7 @@
                                             </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h9a-UZ-Xsw">
-                                            <rect key="frame" x="315" y="77" width="99" height="16"/>
+                                            <rect key="frame" x="315" y="77" width="123" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="Power unplug" id="c2Q-d0-hEd">
                                                 <font key="font" metaFont="smallSystem"/>
@@ -753,7 +753,7 @@
                                             </connections>
                                         </button>
                                         <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="laF-uP-pOH">
-                                            <rect key="frame" x="440" y="78" width="67" height="16"/>
+                                            <rect key="frame" x="447" y="78" width="60" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="Lds-xv-yP2">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -764,7 +764,7 @@
                                             </connections>
                                         </button>
                                         <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cNa-lH-r6d">
-                                            <rect key="frame" x="441" y="122" width="67" height="16"/>
+                                            <rect key="frame" x="448" y="122" width="60" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="IAM-Q0-TI1">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -775,7 +775,7 @@
                                             </connections>
                                         </button>
                                         <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z8l-HP-f9q">
-                                            <rect key="frame" x="441" y="169" width="67" height="16"/>
+                                            <rect key="frame" x="448" y="169" width="60" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="N4b-fv-ZOK">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -786,7 +786,7 @@
                                             </connections>
                                         </button>
                                         <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NDn-De-Lwa">
-                                            <rect key="frame" x="440" y="216" width="67" height="16"/>
+                                            <rect key="frame" x="447" y="216" width="60" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="OeJ-eN-RMU">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -797,7 +797,7 @@
                                             </connections>
                                         </button>
                                         <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sxl-4F-sX6">
-                                            <rect key="frame" x="179" y="34" width="67" height="16"/>
+                                            <rect key="frame" x="186" y="34" width="60" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="rV0-Oz-zSP">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -808,7 +808,7 @@
                                             </connections>
                                         </button>
                                         <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uCs-Z4-tV0">
-                                            <rect key="frame" x="179" y="78" width="67" height="16"/>
+                                            <rect key="frame" x="186" y="78" width="60" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="M2a-3x-oyo">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -819,7 +819,7 @@
                                             </connections>
                                         </button>
                                         <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qKD-Ry-J44">
-                                            <rect key="frame" x="180" y="122" width="67" height="16"/>
+                                            <rect key="frame" x="187" y="122" width="60" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="fHp-9F-9Q0">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -830,7 +830,7 @@
                                             </connections>
                                         </button>
                                         <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aAU-iH-rPS">
-                                            <rect key="frame" x="179" y="169" width="67" height="16"/>
+                                            <rect key="frame" x="186" y="169" width="60" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="eKI-Jc-C8R">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -841,7 +841,7 @@
                                             </connections>
                                         </button>
                                         <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hok-fQ-P3B">
-                                            <rect key="frame" x="179" y="216" width="67" height="16"/>
+                                            <rect key="frame" x="186" y="216" width="60" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="wPZ-UN-t3I">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>

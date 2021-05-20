@@ -35,7 +35,7 @@
 "6dh-zS-Vam.title" = "Redo";
 
 /* Class = "NSTextFieldCell"; title = "Display undim"; ObjectID = "8wZ-Co-Ib6"; */
-"8wZ-Co-Ib6.title" = "Display heraufdimmen";
+"8wZ-Co-Ib6.title" = "Display dimmt hoch";
 
 /* Class = "NSMenuItem"; title = "Substitutions"; ObjectID = "9ic-FL-obx"; */
 "9ic-FL-obx.title" = "Substitutions";
@@ -119,19 +119,19 @@
 "IQv-IB-iLA.title" = "Window";
 
 /* Class = "NSTextFieldCell"; title = "Display sleep"; ObjectID = "jT3-vS-Toc"; */
-"jT3-vS-Toc.title" = "Display standby";
+"jT3-vS-Toc.title" = "Display geht in Standby";
 
 /* Class = "NSMenuItem"; title = "Format"; ObjectID = "jxT-CU-nIS"; */
 "jxT-CU-nIS.title" = "Format";
 
 /* Class = "NSTextFieldCell"; title = "User idle"; ObjectID = "k6V-JJ-HEa"; */
-"k6V-JJ-HEa.title" = "Benutzeruntätigkeit";
+"k6V-JJ-HEa.title" = "Benutzer ist untätig";
 
 /* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
 "Kd2-mp-pUS.title" = "Show All";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Execute command when the display of the Mac is put to sleep mode."; ObjectID = "kTU-j6-0IU"; */
-"kTU-j6-0IU.ibShadowedToolTip" = "Execute command when the display of the Mac is put to sleep mode.";
+"kTU-j6-0IU.ibShadowedToolTip" = "Führt einen Befehl aus wenn das Display des Macs in den Schalfmodus versetzt wird.";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Execute command when a Mac notebook is connected to power supply."; ObjectID = "l1h-oY-3ot"; */
 "l1h-oY-3ot.ibShadowedToolTip" = "Führt einen Befehl aus wenn der Mac mit dem Netzteil verbunden wird.";
@@ -155,7 +155,7 @@
 "NT3-Hr-bx8.ibShadowedToolTip" = "Führt einen Befehl aus wenn das Display des Macs nicht gedimmt ist (ohne das der Mac in den Schlafmodus geht).";
 
 /* Class = "NSTextFieldCell"; title = "User resume"; ObjectID = "ntq-sr-cF8"; */
-"ntq-sr-cF8.title" = "Benutzer fortsetzen";
+"ntq-sr-cF8.title" = "Benutzer setzt fort";
 
 /* Class = "NSButtonCell"; title = "Select"; ObjectID = "OeJ-eN-RMU"; */
 "OeJ-eN-RMU.title" = "Auswählen";
@@ -185,7 +185,7 @@
 "q09-fT-Sye.title" = "Find Next";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Execute command when no user interaction (keyboard, mouse)."; ObjectID = "qIj-xp-Wew"; */
-"qIj-xp-Wew.ibShadowedToolTip" = "Execute command when no user interaction (keyboard, mouse).";
+"qIj-xp-Wew.ibShadowedToolTip" = "Führt einen Befehl bei nicht vorhandener Benutzerinteraktion aus (Tastatur, Maus).";
 
 /* Class = "NSMenuItem"; title = "Check Spelling While Typing"; ObjectID = "rbD-Rh-wIN"; */
 "rbD-Rh-wIN.title" = "Check Spelling While Typing";
@@ -215,7 +215,7 @@
 "UEZ-Bs-lqG.title" = "Capitalize";
 
 /* Class = "NSTextFieldCell"; title = "Display dim"; ObjectID = "upJ-AT-2WB"; */
-"upJ-AT-2WB.title" = "Display herunterdimmen";
+"upJ-AT-2WB.title" = "Display dimmt ab";
 
 /* Class = "NSMenu"; title = "Sleep-o-Mat"; ObjectID = "uQy-DD-JDr"; */
 "uQy-DD-JDr.title" = "Sleep-o-Mat";
@@ -236,7 +236,7 @@
 "vmV-6d-7jI.title" = "Make Upper Case";
 
 /* Class = "NSTextFieldCell"; title = "System sleep"; ObjectID = "Vxp-FE-ORv"; */
-"Vxp-FE-ORv.title" = "System sleep";
+"Vxp-FE-ORv.title" = "System schläft ein";
 
 /* Class = "NSMenu"; title = "Edit"; ObjectID = "W48-6f-4Dl"; */
 "W48-6f-4Dl.title" = "Edit";
@@ -272,7 +272,7 @@
 "YEy-JH-Tfz.title" = "Find and Replace…";
 
 /* Class = "NSTextFieldCell"; title = "System wakeup"; ObjectID = "yJz-Ds-Olm"; */
-"yJz-Ds-Olm.title" = "System wakeup";
+"yJz-Ds-Olm.title" = "System wacht auf";
 
 /* Class = "NSMenuItem"; title = "Start Speaking"; ObjectID = "Ynk-f8-cLZ"; */
 "Ynk-f8-cLZ.title" = "Start Speaking";
