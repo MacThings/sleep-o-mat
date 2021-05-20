@@ -1,0 +1,24 @@
+/* No comment provided by engineer. */
+"I understand" = "Verstanden";
+
+/* No comment provided by engineer. */
+"If you make changes please make sure to press the Start/Stop button (if sleepwatcher is running in daemon mode press Reload) to take the changes affect." = "Wenn Du Änderungen vorgenommen hast, stelle sicher das Du danach entweder den Start/Stop Knopf drückst (oder wenn sleepwatcher im Daemon Modus ausgeführt wird den Auffrischknopf drückst ) damit die Änderungen übernommen werden.";
+
+/* No comment provided by engineer. */
+"Important!" = "Wichtig!";
+
+/* No comment provided by engineer. */
+"Install" = "Installieren";
+
+/* No comment provided by engineer. */
+"Reload" = "Auffrischen";
+
+/* No comment provided by engineer. */
+"Run" = "Start";
+
+/* No comment provided by engineer. */
+"Stop" = "Stop";
+
+/* No comment provided by engineer. */
+"Uninstall" = "Deinstallieren";
+

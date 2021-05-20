@@ -1,0 +1,282 @@
+/* Class = "NSMenu"; title = "Find"; ObjectID = "1b7-l0-nxx"; */
+"1b7-l0-nxx.title" = "Suchen";
+
+/* Class = "NSMenuItem"; title = "Sleep-o-Mat"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "Sleep-o-Mat";
+
+/* Class = "NSMenuItem"; title = "Transformations"; ObjectID = "2oI-Rn-ZJC"; */
+"2oI-Rn-ZJC.title" = "Transformations";
+
+/* Class = "NSTextFieldCell"; title = "Daemon mode"; ObjectID = "3fM-qI-bFO"; */
+"3fM-qI-bFO.title" = "Daemon Modus";
+
+/* Class = "NSMenu"; title = "Spelling"; ObjectID = "3IN-sU-3Bg"; */
+"3IN-sU-3Bg.title" = "Spelling";
+
+/* Class = "NSMenu"; title = "Speech"; ObjectID = "3rS-ZA-NoH"; */
+"3rS-ZA-NoH.title" = "Speech";
+
+/* Class = "NSMenuItem"; title = "Find"; ObjectID = "4EN-yA-p0u"; */
+"4EN-yA-p0u.title" = "Find";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Installs a launch daemon. On every boot sleepwatcher is loaded automatic."; ObjectID = "4ho-Sa-fz1"; */
+"4ho-Sa-fz1.ibShadowedToolTip" = "Installiert einen LaunchDaemon. Nach jedem Neustart wird sleepwatcher autmatisch im Hintergrund gestartet.";
+
+/* Class = "NSMenuItem"; title = "Quit Sleep-o-Mat"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Sleep-o-Mat beenden";
+
+/* Class = "NSMenuItem"; title = "About Sleep-o-Mat"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "Über Sleep-o-Mat";
+
+/* Class = "NSMenuItem"; title = "Edit"; ObjectID = "5QF-Oa-p0T"; */
+"5QF-Oa-p0T.title" = "Bearbeiten";
+
+/* Class = "NSMenuItem"; title = "Redo"; ObjectID = "6dh-zS-Vam"; */
+"6dh-zS-Vam.title" = "Redo";
+
+/* Class = "NSTextFieldCell"; title = "Display undim"; ObjectID = "8wZ-Co-Ib6"; */
+"8wZ-Co-Ib6.title" = "Display heraufdimmen";
+
+/* Class = "NSMenuItem"; title = "Substitutions"; ObjectID = "9ic-FL-obx"; */
+"9ic-FL-obx.title" = "Substitutions";
+
+/* Class = "NSMenuItem"; title = "Smart Copy/Paste"; ObjectID = "9yt-4B-nSM"; */
+"9yt-4B-nSM.title" = "Smart Copy/Paste";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Execute command when the display of the Mac is dimmed."; ObjectID = "26g-8f-dSY"; */
+"26g-8f-dSY.ibShadowedToolTip" = "Führt einen Befehl aus wenn der Macbildschirm gedimmt ist.";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Execute command when the user resumes mouse or keyboard."; ObjectID = "37d-Fw-A4Q"; */
+"37d-Fw-A4Q.ibShadowedToolTip" = "Führt einen Befehl aus wenn der Benutzer wieder die Tastatur oder Maus benutzt.";
+
+/* Class = "NSMenuItem"; title = "Correct Spelling Automatically"; ObjectID = "78Y-hA-62v"; */
+"78Y-hA-62v.title" = "Correct Spelling Automatically";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "Window";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Hauptmenu";
+
+/* Class = "NSMenuItem"; title = "Check for updates"; ObjectID = "BOF-NM-1cW"; */
+"BOF-NM-1cW.title" = "Auf Updates prüfen";
+
+/* Class = "NSMenuItem"; title = "Use Selection for Find"; ObjectID = "buJ-ug-pKt"; */
+"buJ-ug-pKt.title" = "Use Selection for Find";
+
+/* Class = "NSTextFieldCell"; title = "Power unplug"; ObjectID = "c2Q-d0-hEd"; */
+"c2Q-d0-hEd.title" = "Netzteil entfernt";
+
+/* Class = "NSMenu"; title = "Transformations"; ObjectID = "c8a-y6-VQd"; */
+"c8a-y6-VQd.title" = "Transformations";
+
+/* Class = "NSMenuItem"; title = "Smart Links"; ObjectID = "cwL-P1-jid"; */
+"cwL-P1-jid.title" = "Smart Links";
+
+/* Class = "NSMenuItem"; title = "Make Lower Case"; ObjectID = "d9M-CD-aMd"; */
+"d9M-CD-aMd.title" = "Make Lower Case";
+
+/* Class = "NSMenuItem"; title = "File"; ObjectID = "dMs-cI-mzQ"; */
+"dMs-cI-mzQ.title" = "File";
+
+/* Class = "NSMenuItem"; title = "Undo"; ObjectID = "dRJ-4n-Yzg"; */
+"dRJ-4n-Yzg.title" = "Undo";
+
+/* Class = "NSMenuItem"; title = "Spelling and Grammar"; ObjectID = "Dv1-io-Yv7"; */
+"Dv1-io-Yv7.title" = "Spelling and Grammar";
+
+/* Class = "NSButtonCell"; title = "Select"; ObjectID = "eKI-Jc-C8R"; */
+"eKI-Jc-C8R.title" = "Auswählen";
+
+/* Class = "NSMenu"; title = "Substitutions"; ObjectID = "FeM-D8-WVr"; */
+"FeM-D8-WVr.title" = "Substitutions";
+
+/* Class = "NSButtonCell"; title = "Select"; ObjectID = "fHp-9F-9Q0"; */
+"fHp-9F-9Q0.title" = "Auswählen";
+
+/* Class = "NSMenuItem"; title = "Paste"; ObjectID = "gVA-U4-sdL"; */
+"gVA-U4-sdL.title" = "Paste";
+
+/* Class = "NSMenuItem"; title = "Show Spelling and Grammar"; ObjectID = "HFo-cy-zxI"; */
+"HFo-cy-zxI.title" = "Show Spelling and Grammar";
+
+/* Class = "NSMenuItem"; title = "Text Replacement"; ObjectID = "HFQ-gK-NFA"; */
+"HFQ-gK-NFA.title" = "Text Replacement";
+
+/* Class = "NSMenuItem"; title = "Smart Quotes"; ObjectID = "hQb-2v-fYv"; */
+"hQb-2v-fYv.title" = "Smart Quotes";
+
+/* Class = "NSButtonCell"; title = "Install"; ObjectID = "HST-Nb-7RR"; */
+"HST-Nb-7RR.title" = "Installieren";
+
+/* Class = "NSMenuItem"; title = "Check Document Now"; ObjectID = "hz2-CU-CR7"; */
+"hz2-CU-CR7.title" = "Check Document Now";
+
+/* Class = "NSButtonCell"; title = "Select"; ObjectID = "IAM-Q0-TI1"; */
+"IAM-Q0-TI1.title" = "Auswählen";
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "Window";
+
+/* Class = "NSTextFieldCell"; title = "Display sleep"; ObjectID = "jT3-vS-Toc"; */
+"jT3-vS-Toc.title" = "Display standby";
+
+/* Class = "NSMenuItem"; title = "Format"; ObjectID = "jxT-CU-nIS"; */
+"jxT-CU-nIS.title" = "Format";
+
+/* Class = "NSTextFieldCell"; title = "User idle"; ObjectID = "k6V-JJ-HEa"; */
+"k6V-JJ-HEa.title" = "Benutzeruntätigkeit";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "Show All";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Execute command when the display of the Mac is put to sleep mode."; ObjectID = "kTU-j6-0IU"; */
+"kTU-j6-0IU.ibShadowedToolTip" = "Execute command when the display of the Mac is put to sleep mode.";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Execute command when a Mac notebook is connected to power supply."; ObjectID = "l1h-oY-3ot"; */
+"l1h-oY-3ot.ibShadowedToolTip" = "Führt einen Befehl aus wenn der Mac mit dem Netzteil verbunden wird.";
+
+/* Class = "NSButtonCell"; title = "Select"; ObjectID = "Lds-xv-yP2"; */
+"Lds-xv-yP2.title" = "Auswählen";
+
+/* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ"; */
+"LE2-aR-0XJ.title" = "Alle nach vorne holen";
+
+/* Class = "NSButtonCell"; title = "Select"; ObjectID = "M2a-3x-oyo"; */
+"M2a-3x-oyo.title" = "Auswählen";
+
+/* Class = "NSMenuItem"; title = "Check Grammar With Spelling"; ObjectID = "mK6-2p-4JG"; */
+"mK6-2p-4JG.title" = "Check Grammar With Spelling";
+
+/* Class = "NSButtonCell"; title = "Select"; ObjectID = "N4b-fv-ZOK"; */
+"N4b-fv-ZOK.title" = "Auswählen";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Execute command when the display of the Mac is undimmed (without having gone to sleep)."; ObjectID = "NT3-Hr-bx8"; */
+"NT3-Hr-bx8.ibShadowedToolTip" = "Führt einen Befehl aus wenn das Display des Macs nicht gedimmt ist (ohne das der Mac in den Schlafmodus geht).";
+
+/* Class = "NSTextFieldCell"; title = "User resume"; ObjectID = "ntq-sr-cF8"; */
+"ntq-sr-cF8.title" = "Benutzer fortsetzen";
+
+/* Class = "NSButtonCell"; title = "Select"; ObjectID = "OeJ-eN-RMU"; */
+"OeJ-eN-RMU.title" = "Auswählen";
+
+/* Class = "NSMenuItem"; title = "Hide Sleep-o-Mat"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Sleep-o-Mat ausblenden";
+
+/* Class = "NSTextFieldCell"; title = "Powered by \"sleepwatcher\" © Bernhard Baehr"; ObjectID = "oVw-YS-kSl"; */
+"oVw-YS-kSl.title" = "Powered by \"sleepwatcher\" © Bernhard Baehr";
+
+/* Class = "NSMenuItem"; title = "Find Previous"; ObjectID = "OwM-mh-QMV"; */
+"OwM-mh-QMV.title" = "Find Previous";
+
+/* Class = "NSMenuItem"; title = "Stop Speaking"; ObjectID = "Oyz-dy-DGm"; */
+"Oyz-dy-DGm.title" = "Stop Speaking";
+
+/* Class = "NSMenuItem"; title = "Delete"; ObjectID = "pa3-QI-u2k"; */
+"pa3-QI-u2k.title" = "Delete";
+
+/* Class = "NSTextFieldCell"; title = "Power plug"; ObjectID = "Pfo-wy-ZhX"; */
+"Pfo-wy-ZhX.title" = "Netzteil verbunden";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Execute command when the Mac is put to sleep mode."; ObjectID = "Pkw-zG-WeJ"; */
+"Pkw-zG-WeJ.ibShadowedToolTip" = "Führt einen Befehl aus wenn der Mac in den Schlafmodus versetzt wird.";
+
+/* Class = "NSMenuItem"; title = "Find Next"; ObjectID = "q09-fT-Sye"; */
+"q09-fT-Sye.title" = "Find Next";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Execute command when no user interaction (keyboard, mouse)."; ObjectID = "qIj-xp-Wew"; */
+"qIj-xp-Wew.ibShadowedToolTip" = "Execute command when no user interaction (keyboard, mouse).";
+
+/* Class = "NSMenuItem"; title = "Check Spelling While Typing"; ObjectID = "rbD-Rh-wIN"; */
+"rbD-Rh-wIN.title" = "Check Spelling While Typing";
+
+/* Class = "NSMenuItem"; title = "Smart Dashes"; ObjectID = "rgM-f4-ycn"; */
+"rgM-f4-ycn.title" = "Smart Dashes";
+
+/* Class = "NSMenuItem"; title = "Select All"; ObjectID = "Ruw-6m-B2m"; */
+"Ruw-6m-B2m.title" = "Select All";
+
+/* Class = "NSButtonCell"; title = "Select"; ObjectID = "rV0-Oz-zSP"; */
+"rV0-Oz-zSP.title" = "Auswählen";
+
+/* Class = "NSMenuItem"; title = "Jump to Selection"; ObjectID = "S0p-oC-mLd"; */
+"S0p-oC-mLd.title" = "Jump to Selection";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
+"Td7-aD-5lo.title" = "Window";
+
+/* Class = "NSTextFieldCell"; title = "Sleep-o-Mat"; ObjectID = "TRI-w3-wTo"; */
+"TRI-w3-wTo.title" = "Sleep-o-Mat";
+
+/* Class = "NSMenuItem"; title = "Data Detectors"; ObjectID = "tRr-pd-1PS"; */
+"tRr-pd-1PS.title" = "Data Detectors";
+
+/* Class = "NSMenuItem"; title = "Capitalize"; ObjectID = "UEZ-Bs-lqG"; */
+"UEZ-Bs-lqG.title" = "Capitalize";
+
+/* Class = "NSTextFieldCell"; title = "Display dim"; ObjectID = "upJ-AT-2WB"; */
+"upJ-AT-2WB.title" = "Display herunterdimmen";
+
+/* Class = "NSMenu"; title = "Sleep-o-Mat"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "Sleep-o-Mat";
+
+/* Class = "NSMenuItem"; title = "Cut"; ObjectID = "uRl-iY-unG"; */
+"uRl-iY-unG.title" = "Cut";
+
+/* Class = "NSTextFieldCell"; title = "Status"; ObjectID = "uvj-d3-pWC"; */
+"uvj-d3-pWC.title" = "Status";
+
+/* Class = "NSButtonCell"; title = "Run"; ObjectID = "UxA-hF-RQ3"; */
+"UxA-hF-RQ3.title" = "Run";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "Hide Others";
+
+/* Class = "NSMenuItem"; title = "Make Upper Case"; ObjectID = "vmV-6d-7jI"; */
+"vmV-6d-7jI.title" = "Make Upper Case";
+
+/* Class = "NSTextFieldCell"; title = "System sleep"; ObjectID = "Vxp-FE-ORv"; */
+"Vxp-FE-ORv.title" = "System sleep";
+
+/* Class = "NSMenu"; title = "Edit"; ObjectID = "W48-6f-4Dl"; */
+"W48-6f-4Dl.title" = "Edit";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Execute command when a Mac notebook is disconnected from power supply."; ObjectID = "we9-CP-cIH"; */
+"we9-CP-cIH.ibShadowedToolTip" = "Führt einen Befehl aus wenn der Mac vom Netzteil getrennt wird.";
+
+/* Class = "NSMenuItem"; title = "Paste and Match Style"; ObjectID = "WeT-3V-zwk"; */
+"WeT-3V-zwk.title" = "Paste and Match Style";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
+"wpr-3q-Mcd.title" = "Help";
+
+/* Class = "NSButtonCell"; title = "Select"; ObjectID = "wPZ-UN-t3I"; */
+"wPZ-UN-t3I.title" = "Auswählen";
+
+/* Class = "NSMenuItem"; title = "Copy"; ObjectID = "x3v-GG-iWU"; */
+"x3v-GG-iWU.title" = "Copy";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Execute command when the Mac wakes up."; ObjectID = "xCN-xy-MPl"; */
+"xCN-xy-MPl.ibShadowedToolTip" = "Führt einen Befehl aus wenn der Mac aufwacht.";
+
+/* Class = "NSViewController"; title = "Main"; ObjectID = "XfG-lQ-9wD"; */
+"XfG-lQ-9wD.title" = "Sleep-o-Mat";
+
+/* Class = "NSMenuItem"; title = "Speech"; ObjectID = "xrE-MZ-jX0"; */
+"xrE-MZ-jX0.title" = "Speech";
+
+/* Class = "NSMenuItem"; title = "Find…"; ObjectID = "Xz5-n4-O0W"; */
+"Xz5-n4-O0W.title" = "Find…";
+
+/* Class = "NSMenuItem"; title = "Find and Replace…"; ObjectID = "YEy-JH-Tfz"; */
+"YEy-JH-Tfz.title" = "Find and Replace…";
+
+/* Class = "NSTextFieldCell"; title = "System wakeup"; ObjectID = "yJz-Ds-Olm"; */
+"yJz-Ds-Olm.title" = "System wakeup";
+
+/* Class = "NSMenuItem"; title = "Start Speaking"; ObjectID = "Ynk-f8-cLZ"; */
+"Ynk-f8-cLZ.title" = "Start Speaking";
+
+/* Class = "NSMenuItem"; title = "Show Substitutions"; ObjectID = "z6F-FW-3nz"; */
+"z6F-FW-3nz.title" = "Show Substitutions";
+

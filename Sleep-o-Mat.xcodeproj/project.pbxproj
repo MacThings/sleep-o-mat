@@ -13,6 +13,7 @@
 		2A87837B26557A7800CEBBBF /* de.bernhard-baehr.sleepwatcher.plist in config */ = {isa = PBXBuildFile; fileRef = 2A87837026557A4F00CEBBBF /* de.bernhard-baehr.sleepwatcher.plist */; };
 		2A87837C26557A7800CEBBBF /* wakeup.sh in config */ = {isa = PBXBuildFile; fileRef = 2A87837126557A4F00CEBBBF /* wakeup.sh */; };
 		2A87838326558BC900CEBBBF /* PlistBuddy in bin */ = {isa = PBXBuildFile; fileRef = 2A87837F26558BB700CEBBBF /* PlistBuddy */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2A8783A22656885D00CEBBBF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A8783A02656885D00CEBBBF /* Localizable.strings */; };
 		2AB27047265530A9001EB8C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB27046265530A9001EB8C9 /* AppDelegate.swift */; };
 		2AB27049265530A9001EB8C9 /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB27048265530A9001EB8C9 /* MainWindow.swift */; };
 		2AB2704B265530AA001EB8C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2704A265530AA001EB8C9 /* Assets.xcassets */; };
@@ -67,6 +68,8 @@
 		2A87837126557A4F00CEBBBF /* wakeup.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = wakeup.sh; sourceTree = "<group>"; };
 		2A87837F26558BB700CEBBBF /* PlistBuddy */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = PlistBuddy; sourceTree = "<group>"; };
 		2A8783972656801B00CEBBBF /* sleepomat.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = sleepomat.html; sourceTree = "<group>"; };
+		2A87839F265682DE00CEBBBF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		2A8783A12656885D00CEBBBF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2AB27043265530A9001EB8C9 /* Sleep-o-Mat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleep-o-Mat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AB27046265530A9001EB8C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AB27048265530A9001EB8C9 /* MainWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
@@ -138,6 +141,7 @@
 				2AB2704A265530AA001EB8C9 /* Assets.xcassets */,
 				2AB2704C265530AA001EB8C9 /* Main.storyboard */,
 				2AB2704F265530AA001EB8C9 /* Info.plist */,
+				2A8783A02656885D00CEBBBF /* Localizable.strings */,
 				2AB27050265530AA001EB8C9 /* Sleep_o_Mat.entitlements */,
 				2A8783972656801B00CEBBBF /* sleepomat.html */,
 			);
@@ -217,6 +221,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 2AB2703A265530A9001EB8C9;
 			productRefGroup = 2AB27044265530A9001EB8C9 /* Products */;
@@ -234,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AB2704B265530AA001EB8C9 /* Assets.xcassets in Resources */,
+				2A8783A22656885D00CEBBBF /* Localizable.strings in Resources */,
 				2AB2704E265530AA001EB8C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,10 +319,19 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		2A8783A02656885D00CEBBBF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A8783A12656885D00CEBBBF /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		2AB2704C265530AA001EB8C9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2AB2704D265530AA001EB8C9 /* Base */,
+				2A87839F265682DE00CEBBBF /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -328,6 +343,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -389,6 +405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
