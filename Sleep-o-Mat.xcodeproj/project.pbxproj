@@ -15,6 +15,13 @@
 		2A87838326558BC900CEBBBF /* PlistBuddy in bin */ = {isa = PBXBuildFile; fileRef = 2A87837F26558BB700CEBBBF /* PlistBuddy */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2A8783A22656885D00CEBBBF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A8783A02656885D00CEBBBF /* Localizable.strings */; };
 		2A8783AD26568F1800CEBBBF /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8783AC26568F1800CEBBBF /* About.swift */; };
+		2A8783D02656F2F700CEBBBF /* dim.sh in config */ = {isa = PBXBuildFile; fileRef = 2A8783C32656F2D000CEBBBF /* dim.sh */; };
+		2A8783D12656F2F700CEBBBF /* displaystandby.sh in config */ = {isa = PBXBuildFile; fileRef = 2A8783C42656F2D000CEBBBF /* displaystandby.sh */; };
+		2A8783D22656F2F700CEBBBF /* plug.sh in config */ = {isa = PBXBuildFile; fileRef = 2A8783BE2656F2D000CEBBBF /* plug.sh */; };
+		2A8783D32656F2F700CEBBBF /* undim.sh in config */ = {isa = PBXBuildFile; fileRef = 2A8783C12656F2D000CEBBBF /* undim.sh */; };
+		2A8783D42656F2F700CEBBBF /* unplug.sh in config */ = {isa = PBXBuildFile; fileRef = 2A8783BF2656F2D000CEBBBF /* unplug.sh */; };
+		2A8783D52656F2F700CEBBBF /* useridle.sh in config */ = {isa = PBXBuildFile; fileRef = 2A8783C02656F2D000CEBBBF /* useridle.sh */; };
+		2A8783D62656F2F700CEBBBF /* userresume.sh in config */ = {isa = PBXBuildFile; fileRef = 2A8783C22656F2D000CEBBBF /* userresume.sh */; };
 		2AB27047265530A9001EB8C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB27046265530A9001EB8C9 /* AppDelegate.swift */; };
 		2AB27049265530A9001EB8C9 /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB27048265530A9001EB8C9 /* MainWindow.swift */; };
 		2AB2704B265530AA001EB8C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2704A265530AA001EB8C9 /* Assets.xcassets */; };
@@ -52,6 +59,13 @@
 			dstPath = config;
 			dstSubfolderSpec = 7;
 			files = (
+				2A8783D02656F2F700CEBBBF /* dim.sh in config */,
+				2A8783D12656F2F700CEBBBF /* displaystandby.sh in config */,
+				2A8783D22656F2F700CEBBBF /* plug.sh in config */,
+				2A8783D32656F2F700CEBBBF /* undim.sh in config */,
+				2A8783D42656F2F700CEBBBF /* unplug.sh in config */,
+				2A8783D52656F2F700CEBBBF /* useridle.sh in config */,
+				2A8783D62656F2F700CEBBBF /* userresume.sh in config */,
 				2A87837A26557A7800CEBBBF /* sleep.sh in config */,
 				2A87837B26557A7800CEBBBF /* de.bernhard-baehr.sleepwatcher.plist in config */,
 				2A87837C26557A7800CEBBBF /* wakeup.sh in config */,
@@ -72,6 +86,13 @@
 		2A87839F265682DE00CEBBBF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		2A8783A12656885D00CEBBBF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2A8783AC26568F1800CEBBBF /* About.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		2A8783BE2656F2D000CEBBBF /* plug.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = plug.sh; sourceTree = "<group>"; };
+		2A8783BF2656F2D000CEBBBF /* unplug.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = unplug.sh; sourceTree = "<group>"; };
+		2A8783C02656F2D000CEBBBF /* useridle.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = useridle.sh; sourceTree = "<group>"; };
+		2A8783C12656F2D000CEBBBF /* undim.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = undim.sh; sourceTree = "<group>"; };
+		2A8783C22656F2D000CEBBBF /* userresume.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = userresume.sh; sourceTree = "<group>"; };
+		2A8783C32656F2D000CEBBBF /* dim.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = dim.sh; sourceTree = "<group>"; };
+		2A8783C42656F2D000CEBBBF /* displaystandby.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = displaystandby.sh; sourceTree = "<group>"; };
 		2AB27043265530A9001EB8C9 /* Sleep-o-Mat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleep-o-Mat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AB27046265530A9001EB8C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AB27048265530A9001EB8C9 /* MainWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
@@ -108,6 +129,13 @@
 		2A87836E26557A4F00CEBBBF /* config */ = {
 			isa = PBXGroup;
 			children = (
+				2A8783C32656F2D000CEBBBF /* dim.sh */,
+				2A8783C42656F2D000CEBBBF /* displaystandby.sh */,
+				2A8783BE2656F2D000CEBBBF /* plug.sh */,
+				2A8783C12656F2D000CEBBBF /* undim.sh */,
+				2A8783BF2656F2D000CEBBBF /* unplug.sh */,
+				2A8783C02656F2D000CEBBBF /* useridle.sh */,
+				2A8783C22656F2D000CEBBBF /* userresume.sh */,
 				2A87836F26557A4F00CEBBBF /* sleep.sh */,
 				2A87837026557A4F00CEBBBF /* de.bernhard-baehr.sleepwatcher.plist */,
 				2A87837126557A4F00CEBBBF /* wakeup.sh */,
