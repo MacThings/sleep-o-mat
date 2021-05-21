@@ -16,12 +16,13 @@
 		2A8783A22656885D00CEBBBF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A8783A02656885D00CEBBBF /* Localizable.strings */; };
 		2A8783AD26568F1800CEBBBF /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8783AC26568F1800CEBBBF /* About.swift */; };
 		2A8783D02656F2F700CEBBBF /* dim.sh in config */ = {isa = PBXBuildFile; fileRef = 2A8783C32656F2D000CEBBBF /* dim.sh */; };
-		2A8783D12656F2F700CEBBBF /* displaystandby.sh in config */ = {isa = PBXBuildFile; fileRef = 2A8783C42656F2D000CEBBBF /* displaystandby.sh */; };
 		2A8783D22656F2F700CEBBBF /* plug.sh in config */ = {isa = PBXBuildFile; fileRef = 2A8783BE2656F2D000CEBBBF /* plug.sh */; };
 		2A8783D32656F2F700CEBBBF /* undim.sh in config */ = {isa = PBXBuildFile; fileRef = 2A8783C12656F2D000CEBBBF /* undim.sh */; };
 		2A8783D42656F2F700CEBBBF /* unplug.sh in config */ = {isa = PBXBuildFile; fileRef = 2A8783BF2656F2D000CEBBBF /* unplug.sh */; };
 		2A8783D52656F2F700CEBBBF /* useridle.sh in config */ = {isa = PBXBuildFile; fileRef = 2A8783C02656F2D000CEBBBF /* useridle.sh */; };
 		2A8783D62656F2F700CEBBBF /* userresume.sh in config */ = {isa = PBXBuildFile; fileRef = 2A8783C22656F2D000CEBBBF /* userresume.sh */; };
+		2A8783E02658104500CEBBBF /* displaysleep.sh in config */ = {isa = PBXBuildFile; fileRef = 2A8783DC26580D6000CEBBBF /* displaysleep.sh */; };
+		2A8783E12658104500CEBBBF /* displaywakeup.sh in config */ = {isa = PBXBuildFile; fileRef = 2A8783D926580D5900CEBBBF /* displaywakeup.sh */; };
 		2AB27047265530A9001EB8C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB27046265530A9001EB8C9 /* AppDelegate.swift */; };
 		2AB27049265530A9001EB8C9 /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB27048265530A9001EB8C9 /* MainWindow.swift */; };
 		2AB2704B265530AA001EB8C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2704A265530AA001EB8C9 /* Assets.xcassets */; };
@@ -59,8 +60,9 @@
 			dstPath = config;
 			dstSubfolderSpec = 7;
 			files = (
+				2A8783E02658104500CEBBBF /* displaysleep.sh in config */,
+				2A8783E12658104500CEBBBF /* displaywakeup.sh in config */,
 				2A8783D02656F2F700CEBBBF /* dim.sh in config */,
-				2A8783D12656F2F700CEBBBF /* displaystandby.sh in config */,
 				2A8783D22656F2F700CEBBBF /* plug.sh in config */,
 				2A8783D32656F2F700CEBBBF /* undim.sh in config */,
 				2A8783D42656F2F700CEBBBF /* unplug.sh in config */,
@@ -92,7 +94,8 @@
 		2A8783C12656F2D000CEBBBF /* undim.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = undim.sh; sourceTree = "<group>"; };
 		2A8783C22656F2D000CEBBBF /* userresume.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = userresume.sh; sourceTree = "<group>"; };
 		2A8783C32656F2D000CEBBBF /* dim.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = dim.sh; sourceTree = "<group>"; };
-		2A8783C42656F2D000CEBBBF /* displaystandby.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = displaystandby.sh; sourceTree = "<group>"; };
+		2A8783D926580D5900CEBBBF /* displaywakeup.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = displaywakeup.sh; sourceTree = "<group>"; };
+		2A8783DC26580D6000CEBBBF /* displaysleep.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = displaysleep.sh; sourceTree = "<group>"; };
 		2AB27043265530A9001EB8C9 /* Sleep-o-Mat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleep-o-Mat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AB27046265530A9001EB8C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AB27048265530A9001EB8C9 /* MainWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
@@ -130,7 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				2A8783C32656F2D000CEBBBF /* dim.sh */,
-				2A8783C42656F2D000CEBBBF /* displaystandby.sh */,
+				2A8783DC26580D6000CEBBBF /* displaysleep.sh */,
+				2A8783D926580D5900CEBBBF /* displaywakeup.sh */,
 				2A8783BE2656F2D000CEBBBF /* plug.sh */,
 				2A8783C12656F2D000CEBBBF /* undim.sh */,
 				2A8783BF2656F2D000CEBBBF /* unplug.sh */,
@@ -497,7 +501,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Sleep-o-Mat/Sleep_o_Mat.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = 4ATFWV7M4B;
 				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = "Sleep-o-Mat/Info.plist";
@@ -505,7 +509,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "sleep-o-mat.slsoft.de";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -521,7 +525,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Sleep-o-Mat/Sleep_o_Mat.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = 4ATFWV7M4B;
 				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = "Sleep-o-Mat/Info.plist";
@@ -529,7 +533,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "sleep-o-mat.slsoft.de";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

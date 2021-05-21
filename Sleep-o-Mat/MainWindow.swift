@@ -11,33 +11,44 @@ class MainWindow: NSViewController {
     
     let scriptPath = Bundle.main.path(forResource: "/script/script", ofType: "command")!
     
-    
     @IBOutlet weak var text_editor: NSTextField!
     
     @IBOutlet weak var selected_system_sleep_path: NSTextField!
     @IBOutlet weak var selected_system_sleep_path_edit: NSButton!
 
     @IBOutlet weak var selected_system_wakeup_path: NSTextField!
+    @IBOutlet weak var selected_system_wakeup_path_edit: NSButton!
+    
     @IBOutlet weak var selected_display_dim_path: NSTextField!
+    @IBOutlet weak var selected_display_dim_path_edit: NSButton!
+    
     @IBOutlet weak var selected_display_undim_path: NSTextField!
+    @IBOutlet weak var selected_display_undim_path_edit: NSButton!
+    
     @IBOutlet weak var selected_display_sleep_path: NSTextField!
+    @IBOutlet weak var selected_display_sleep_path_edit: NSButton!
     
     @IBOutlet weak var selected_display_wakeup_path: NSTextField!
+    @IBOutlet weak var selected_display_wakeup_path_edit: NSButton!
+    
     @IBOutlet weak var selected_user_idle_path: NSTextField!
+    @IBOutlet weak var selected_user_idle_path_edit: NSButton!
+    
     @IBOutlet weak var selected_user_resume_path: NSTextField!
+    @IBOutlet weak var selected_user_resume_path_edit: NSButton!
+    
     @IBOutlet weak var selected_power_plug_path: NSTextField!
+    @IBOutlet weak var selected_power_plug_path_edit: NSButton!
+    
     @IBOutlet weak var selected_power_unplug_path: NSTextField!
+    @IBOutlet weak var selected_power_unplug_path_edit: NSButton!
     
     
     @IBOutlet weak var run_button: NSButton!
     @IBOutlet weak var sw_running_dot: NSImageView!
     @IBOutlet weak var dm_running_dot: NSImageView!
-    
-    
-    
+
     @IBOutlet weak var install_daemon: NSButton!
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,54 +102,63 @@ class MainWindow: NSViewController {
             let splitter = system_wakeup_path!.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
             let lastElement = splitter.last
             selected_system_wakeup_path.stringValue = lastElement!
+            selected_system_wakeup_path_edit.isEnabled = true
         }
         let display_dim_path = UserDefaults.standard.string(forKey: "display_dim_path")
         if display_dim_path != nil{
             let splitter = display_dim_path!.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
             let lastElement = splitter.last
             selected_display_dim_path.stringValue = lastElement!
+            selected_display_dim_path_edit.isEnabled = true
         }
         let display_undim_path = UserDefaults.standard.string(forKey: "display_undim_path")
         if display_undim_path != nil{
             let splitter = display_undim_path!.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
             let lastElement = splitter.last
             selected_display_undim_path.stringValue = lastElement!
+            selected_display_undim_path_edit.isEnabled = true
         }
         let display_sleep_path = UserDefaults.standard.string(forKey: "display_sleep_path")
         if display_sleep_path != nil{
             let splitter = display_sleep_path!.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
             let lastElement = splitter.last
             selected_display_sleep_path.stringValue = lastElement!
+            selected_display_sleep_path_edit.isEnabled = true
         }
         let display_wakeup_path = UserDefaults.standard.string(forKey: "display_wakeup_path")
         if display_wakeup_path != nil{
             let splitter = display_wakeup_path!.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
             let lastElement = splitter.last
             selected_display_wakeup_path.stringValue = lastElement!
+            selected_display_wakeup_path_edit.isEnabled = true
         }
         let user_idle_path = UserDefaults.standard.string(forKey: "user_idle_path")
         if user_idle_path != nil{
             let splitter = user_idle_path!.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
             let lastElement = splitter.last
             selected_user_idle_path.stringValue = lastElement!
+            selected_user_idle_path_edit.isEnabled = true
         }
         let user_resume_path = UserDefaults.standard.string(forKey: "user_resume_path")
         if user_resume_path != nil{
             let splitter = user_resume_path!.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
             let lastElement = splitter.last
             selected_user_resume_path.stringValue = lastElement!
+            selected_user_resume_path_edit.isEnabled = true
         }
         let power_plug_path = UserDefaults.standard.string(forKey: "power_plug_path")
         if power_plug_path != nil{
             let splitter = power_plug_path!.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
             let lastElement = splitter.last
             selected_power_plug_path.stringValue = lastElement!
+            selected_power_plug_path_edit.isEnabled = true
         }
         let power_unplug_path = UserDefaults.standard.string(forKey: "power_unplug_path")
         if power_unplug_path != nil{
             let splitter = power_unplug_path!.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
             let lastElement = splitter.last
             selected_power_unplug_path.stringValue = lastElement!
+            selected_power_unplug_path_edit.isEnabled = true
         }
         let alert_init = UserDefaults.standard.string(forKey: "alert_check")
         if alert_init != nil{
@@ -203,6 +223,7 @@ class MainWindow: NSViewController {
             let splitter = template!.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
             let lastElement = splitter.last
             selected_system_sleep_path.stringValue = lastElement!
+            selected_system_sleep_path_edit.isEnabled = true
         }
     }
     
@@ -212,6 +233,160 @@ class MainWindow: NSViewController {
         NSWorkspace.shared.openFile(file!, withApplication: text_editor)
     }
     
+    @IBAction func template_system_wakeup(_ sender: Any) {
+        syncShellExec(path: scriptPath, args: ["template_system_wakeup"])
+        let template = UserDefaults.standard.string(forKey: "system_wakeup_path")
+        if template != nil{
+            let splitter = template!.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
+            let lastElement = splitter.last
+            selected_system_wakeup_path.stringValue = lastElement!
+            selected_system_wakeup_path_edit.isEnabled = true
+        }
+    }
+    
+    @IBAction func edit_system_wakeup(_ sender: Any) {
+        let file = UserDefaults.standard.string(forKey: "system_wakeup_path")
+        let text_editor = UserDefaults.standard.string(forKey: "TextEditor")
+        NSWorkspace.shared.openFile(file!, withApplication: text_editor)
+    }
+    
+    
+    @IBAction func template_display_dim(_ sender: Any) {
+        syncShellExec(path: scriptPath, args: ["template_display_dim"])
+        let template = UserDefaults.standard.string(forKey: "display_dim_path")
+        if template != nil{
+            let splitter = template!.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
+            let lastElement = splitter.last
+            selected_display_dim_path.stringValue = lastElement!
+            selected_display_dim_path_edit.isEnabled = true
+        }
+    }
+   
+    @IBAction func edit_display_dim(_ sender: Any) {
+        let file = UserDefaults.standard.string(forKey: "display_dim_path")
+        let text_editor = UserDefaults.standard.string(forKey: "TextEditor")
+        NSWorkspace.shared.openFile(file!, withApplication: text_editor)
+    }
+    
+    @IBAction func template_display_undim(_ sender: Any) {
+        syncShellExec(path: scriptPath, args: ["template_display_undim"])
+        let template = UserDefaults.standard.string(forKey: "display_undim_path")
+        if template != nil{
+            let splitter = template!.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
+            let lastElement = splitter.last
+            selected_display_undim_path.stringValue = lastElement!
+            selected_display_undim_path_edit.isEnabled = true
+        }
+    }
+    
+    @IBAction func edit_display_undim(_ sender: Any) {
+        let file = UserDefaults.standard.string(forKey: "display_undim_path")
+        let text_editor = UserDefaults.standard.string(forKey: "TextEditor")
+        NSWorkspace.shared.openFile(file!, withApplication: text_editor)
+    }
+    
+    @IBAction func template_display_sleep(_ sender: Any) {
+        syncShellExec(path: scriptPath, args: ["template_display_sleep"])
+        let template = UserDefaults.standard.string(forKey: "display_sleep_path")
+        if template != nil{
+            let splitter = template!.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
+            let lastElement = splitter.last
+            selected_display_sleep_path.stringValue = lastElement!
+            selected_display_sleep_path_edit.isEnabled = true
+        }
+    }
+    
+    @IBAction func edit_display_sleep(_ sender: Any) {
+        let file = UserDefaults.standard.string(forKey: "display_sleep_path")
+        let text_editor = UserDefaults.standard.string(forKey: "TextEditor")
+        NSWorkspace.shared.openFile(file!, withApplication: text_editor)
+    }
+    
+    @IBAction func template_display_wakeup(_ sender: Any) {
+        syncShellExec(path: scriptPath, args: ["template_display_wakeup"])
+        let template = UserDefaults.standard.string(forKey: "display_wakeup_path")
+        if template != nil{
+            let splitter = template!.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
+            let lastElement = splitter.last
+            selected_display_wakeup_path.stringValue = lastElement!
+            selected_display_wakeup_path_edit.isEnabled = true
+        }
+    }
+    
+    @IBAction func edit_display_wakeup(_ sender: Any) {
+        let file = UserDefaults.standard.string(forKey: "display_wakeup_path")
+        let text_editor = UserDefaults.standard.string(forKey: "TextEditor")
+        NSWorkspace.shared.openFile(file!, withApplication: text_editor)
+    }
+    
+    @IBAction func template_user_idle(_ sender: Any) {
+        syncShellExec(path: scriptPath, args: ["template_user_idle"])
+        let template = UserDefaults.standard.string(forKey: "user_idle_path")
+        if template != nil{
+            let splitter = template!.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
+            let lastElement = splitter.last
+            selected_user_idle_path.stringValue = lastElement!
+            selected_user_idle_path_edit.isEnabled = true
+        }
+    }
+    
+    @IBAction func edit_user_idle(_ sender: Any) {
+        let file = UserDefaults.standard.string(forKey: "user_idle_path")
+        let text_editor = UserDefaults.standard.string(forKey: "TextEditor")
+        NSWorkspace.shared.openFile(file!, withApplication: text_editor)
+    }
+    
+    @IBAction func template_user_resume(_ sender: Any) {
+        syncShellExec(path: scriptPath, args: ["template_user_resume"])
+        let template = UserDefaults.standard.string(forKey: "user_resume_path")
+        if template != nil{
+            let splitter = template!.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
+            let lastElement = splitter.last
+            selected_user_resume_path.stringValue = lastElement!
+            selected_user_resume_path_edit.isEnabled = true
+        }
+    }
+    
+    @IBAction func edit_user_resume(_ sender: Any) {
+        let file = UserDefaults.standard.string(forKey: "user_resume_path")
+        let text_editor = UserDefaults.standard.string(forKey: "TextEditor")
+        NSWorkspace.shared.openFile(file!, withApplication: text_editor)
+    }
+    
+    @IBAction func template_power_plug(_ sender: Any) {
+        syncShellExec(path: scriptPath, args: ["template_power_plug"])
+        let template = UserDefaults.standard.string(forKey: "power_plug_path")
+        if template != nil{
+            let splitter = template!.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
+            let lastElement = splitter.last
+            selected_power_plug_path.stringValue = lastElement!
+            selected_power_plug_path_edit.isEnabled = true
+        }
+    }
+    
+    @IBAction func edit_power_plug(_ sender: Any) {
+        let file = UserDefaults.standard.string(forKey: "power_plug_path")
+        let text_editor = UserDefaults.standard.string(forKey: "TextEditor")
+        NSWorkspace.shared.openFile(file!, withApplication: text_editor)
+    }
+    
+    @IBAction func template_power_unplug(_ sender: Any) {
+        syncShellExec(path: scriptPath, args: ["template_power_unplug"])
+        let template = UserDefaults.standard.string(forKey: "power_unplug_path")
+        if template != nil{
+            let splitter = template!.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
+            let lastElement = splitter.last
+            selected_power_unplug_path.stringValue = lastElement!
+            selected_power_unplug_path_edit.isEnabled = true
+        }
+    }
+    
+    @IBAction func edit_power_unplug(_ sender: Any) {
+        let file = UserDefaults.standard.string(forKey: "power_unplug_path")
+        let text_editor = UserDefaults.standard.string(forKey: "TextEditor")
+        NSWorkspace.shared.openFile(file!, withApplication: text_editor)
+    }
+ 
     @IBAction func browseFile_system_sleep(sender: AnyObject) {
         
         let dialog = NSOpenPanel();
@@ -232,6 +407,7 @@ class MainWindow: NSViewController {
                 let splitter = path.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
                 let lastElement = splitter.last
                 selected_system_sleep_path.stringValue = lastElement!
+                selected_system_sleep_path_edit.isEnabled = true
                 let savepath = (path as String)
                 UserDefaults.standard.set(savepath, forKey: "system_sleep_path")
             }
@@ -261,6 +437,7 @@ class MainWindow: NSViewController {
                 let splitter = path.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
                 let lastElement = splitter.last
                 selected_system_wakeup_path.stringValue = lastElement!
+                selected_system_wakeup_path_edit.isEnabled = true
                 let savepath = (path as String)
                 UserDefaults.standard.set(savepath, forKey: "system_wakeup_path")
             }
@@ -290,6 +467,7 @@ class MainWindow: NSViewController {
                 let splitter = path.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
                 let lastElement = splitter.last
                 selected_display_dim_path.stringValue = lastElement!
+                selected_display_dim_path_edit.isEnabled = true
                 let savepath = (path as String)
                 UserDefaults.standard.set(savepath, forKey: "display_dim_path")
             }
@@ -319,6 +497,7 @@ class MainWindow: NSViewController {
                 let splitter = path.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
                 let lastElement = splitter.last
                 selected_display_undim_path.stringValue = lastElement!
+                selected_display_undim_path_edit.isEnabled = true
                 let savepath = (path as String)
                 UserDefaults.standard.set(savepath, forKey: "display_undim_path")
             }
@@ -348,6 +527,7 @@ class MainWindow: NSViewController {
                 let splitter = path.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
                 let lastElement = splitter.last
                 selected_display_sleep_path.stringValue = lastElement!
+                selected_display_sleep_path_edit.isEnabled = true
                 let savepath = (path as String)
                 UserDefaults.standard.set(savepath, forKey: "display_sleep_path")
             }
@@ -377,6 +557,7 @@ class MainWindow: NSViewController {
                 let splitter = path.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
                 let lastElement = splitter.last
                 selected_display_wakeup_path.stringValue = lastElement!
+                selected_display_wakeup_path_edit.isEnabled = true
                 let savepath = (path as String)
                 UserDefaults.standard.set(savepath, forKey: "display_wakeup_path")
             }
@@ -406,6 +587,7 @@ class MainWindow: NSViewController {
                 let splitter = path.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
                 let lastElement = splitter.last
                 selected_user_idle_path.stringValue = lastElement!
+                selected_user_idle_path_edit.isEnabled = true
                 let savepath = (path as String)
                 UserDefaults.standard.set(savepath, forKey: "user_idle_path")
             }
@@ -435,6 +617,7 @@ class MainWindow: NSViewController {
                 let splitter = path.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
                 let lastElement = splitter.last
                 selected_user_resume_path.stringValue = lastElement!
+                selected_user_resume_path_edit.isEnabled = true
                 let savepath = (path as String)
                 UserDefaults.standard.set(savepath, forKey: "user_resume_path")
             }
@@ -464,6 +647,7 @@ class MainWindow: NSViewController {
                 let splitter = path.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
                 let lastElement = splitter.last
                 selected_power_plug_path.stringValue = lastElement!
+                selected_power_plug_path_edit.isEnabled = true
                 let savepath = (path as String)
                 UserDefaults.standard.set(savepath, forKey: "power_plug_path")
             }
@@ -493,6 +677,7 @@ class MainWindow: NSViewController {
                 let splitter = path.components(separatedBy: "/") //Gibt den letzten Wert des Arrays aus
                 let lastElement = splitter.last
                 selected_power_unplug_path.stringValue = lastElement!
+                selected_power_unplug_path_edit.isEnabled = true
                 let savepath = (path as String)
                 UserDefaults.standard.set(savepath, forKey: "power_unplug_path")
             }
@@ -513,6 +698,10 @@ class MainWindow: NSViewController {
         dialog.canCreateDirectories    = false;
         dialog.allowsMultipleSelection = false;
         dialog.allowedFileTypes        = ["app"];
+        
+        let launcherLogPathWithTilde = "/Applications" as NSString
+        let expandedLauncherLogPath = launcherLogPathWithTilde.expandingTildeInPath
+        dialog.directoryURL = NSURL.fileURL(withPath: expandedLauncherLogPath, isDirectory: true)
         
         if (dialog.runModal() == NSApplication.ModalResponse.OK) {
             let result = dialog.url // Pathname of the file

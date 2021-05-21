@@ -154,6 +154,87 @@ function template_system_sleep()
     
 }
 
+function template_system_wakeup()
+{
+    mkdir "$ScriptHome"/.sleepomat
+    cp ../config/wakeup.sh "$ScriptHome"/.sleepomat/.
+    plist_string=$( echo "$ScriptHome"/.sleepomat/wakeup.sh )
+    _helpDefaultWrite "system_wakeup_path" "$plist_string"
+    
+}
+
+function template_display_dim()
+{
+    mkdir "$ScriptHome"/.sleepomat
+    cp ../config/dim.sh "$ScriptHome"/.sleepomat/.
+    plist_string=$( echo "$ScriptHome"/.sleepomat/dim.sh )
+    _helpDefaultWrite "display_dim_path" "$plist_string"
+    
+}
+
+function template_display_undim()
+{
+    mkdir "$ScriptHome"/.sleepomat
+    cp ../config/undim.sh "$ScriptHome"/.sleepomat/.
+    plist_string=$( echo "$ScriptHome"/.sleepomat/undim.sh )
+    _helpDefaultWrite "display_undim_path" "$plist_string"
+    
+}
+
+function template_display_sleep()
+{
+    mkdir "$ScriptHome"/.sleepomat
+    cp ../config/displaysleep.sh "$ScriptHome"/.sleepomat/.
+    plist_string=$( echo "$ScriptHome"/.sleepomat/displaysleep.sh )
+    _helpDefaultWrite "display_sleep_path" "$plist_string"
+    
+}
+
+function template_display_wakeup()
+{
+    mkdir "$ScriptHome"/.sleepomat
+    cp ../config/displaywakeup.sh "$ScriptHome"/.sleepomat/.
+    plist_string=$( echo "$ScriptHome"/.sleepomat/displaywakeup.sh )
+    _helpDefaultWrite "display_wakeup_path" "$plist_string"
+    
+}
+
+function template_user_idle()
+{
+    mkdir "$ScriptHome"/.sleepomat
+    cp ../config/useridle.sh "$ScriptHome"/.sleepomat/.
+    plist_string=$( echo "$ScriptHome"/.sleepomat/useridle.sh )
+    _helpDefaultWrite "user_idle_path" "$plist_string"
+    
+}
+
+function template_user_resume()
+{
+    mkdir "$ScriptHome"/.sleepomat
+    cp ../config/userresume.sh "$ScriptHome"/.sleepomat/.
+    plist_string=$( echo "$ScriptHome"/.sleepomat/userresume.sh )
+    _helpDefaultWrite "user_resume_path" "$plist_string"
+    
+}
+
+function template_power_plug()
+{
+    mkdir "$ScriptHome"/.sleepomat
+    cp ../config/plug.sh "$ScriptHome"/.sleepomat/.
+    plist_string=$( echo "$ScriptHome"/.sleepomat/plug.sh )
+    _helpDefaultWrite "power_plug_path" "$plist_string"
+    
+}
+
+function template_power_unplug()
+{
+    mkdir "$ScriptHome"/.sleepomat
+    cp ../config/unplug.sh "$ScriptHome"/.sleepomat/.
+    plist_string=$( echo "$ScriptHome"/.sleepomat/unplug.sh )
+    _helpDefaultWrite "power_unplug_path" "$plist_string"
+    
+}
+
 function install_daemon()
 {
     if [ ! -f /usr/local/bin/sleepwatcher ]; then

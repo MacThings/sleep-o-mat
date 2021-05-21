@@ -644,7 +644,7 @@
                                                 <font key="font" metaFont="miniSystem"/>
                                             </buttonCell>
                                             <connections>
-                                                <action selector="browseFile_user_idleWithSender:" target="XfG-lQ-9wD" id="1QX-PY-iYT"/>
+                                                <action selector="template_system_wakeup:" target="XfG-lQ-9wD" id="Lo7-aZ-QyA"/>
                                             </connections>
                                         </button>
                                         <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lHc-1t-Ihg">
@@ -655,7 +655,7 @@
                                                 <font key="font" metaFont="miniSystem"/>
                                             </buttonCell>
                                             <connections>
-                                                <action selector="browseFile_user_idleWithSender:" target="XfG-lQ-9wD" id="iG5-TB-91o"/>
+                                                <action selector="template_display_dim:" target="XfG-lQ-9wD" id="g4R-sJ-OQZ"/>
                                             </connections>
                                         </button>
                                         <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XnX-zY-9Sg">
@@ -666,7 +666,7 @@
                                                 <font key="font" metaFont="miniSystem"/>
                                             </buttonCell>
                                             <connections>
-                                                <action selector="browseFile_user_idleWithSender:" target="XfG-lQ-9wD" id="fev-1A-tra"/>
+                                                <action selector="template_display_undim:" target="XfG-lQ-9wD" id="C4X-Sf-dDw"/>
                                             </connections>
                                         </button>
                                         <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="avV-dY-p3m">
@@ -677,7 +677,7 @@
                                                 <font key="font" metaFont="miniSystem"/>
                                             </buttonCell>
                                             <connections>
-                                                <action selector="browseFile_user_idleWithSender:" target="XfG-lQ-9wD" id="TvH-7F-rl4"/>
+                                                <action selector="template_display_sleep:" target="XfG-lQ-9wD" id="mAh-CK-ArP"/>
                                             </connections>
                                         </button>
                                         <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wUr-DB-ppt">
@@ -903,7 +903,7 @@
                                                 <font key="font" metaFont="miniSystem"/>
                                             </buttonCell>
                                             <connections>
-                                                <action selector="browseFile_user_idleWithSender:" target="XfG-lQ-9wD" id="Jr0-qO-27f"/>
+                                                <action selector="template_user_idle:" target="XfG-lQ-9wD" id="afj-xc-Jyx"/>
                                             </connections>
                                         </button>
                                         <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x3j-D8-ABL">
@@ -914,7 +914,7 @@
                                                 <font key="font" metaFont="miniSystem"/>
                                             </buttonCell>
                                             <connections>
-                                                <action selector="browseFile_user_idleWithSender:" target="XfG-lQ-9wD" id="cH8-RL-F8N"/>
+                                                <action selector="template_user_resume:" target="XfG-lQ-9wD" id="Cw8-28-e7S"/>
                                             </connections>
                                         </button>
                                         <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g8O-kT-cul">
@@ -925,7 +925,7 @@
                                                 <font key="font" metaFont="miniSystem"/>
                                             </buttonCell>
                                             <connections>
-                                                <action selector="browseFile_user_idleWithSender:" target="XfG-lQ-9wD" id="NDx-ND-TYP"/>
+                                                <action selector="template_power_plug:" target="XfG-lQ-9wD" id="EzP-T1-Jof"/>
                                             </connections>
                                         </button>
                                         <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bsV-Bo-scC">
@@ -936,7 +936,7 @@
                                                 <font key="font" metaFont="miniSystem"/>
                                             </buttonCell>
                                             <connections>
-                                                <action selector="browseFile_user_idleWithSender:" target="XfG-lQ-9wD" id="ToZ-I7-F6B"/>
+                                                <action selector="template_power_unplug:" target="XfG-lQ-9wD" id="xjh-Mu-nrB"/>
                                             </connections>
                                         </button>
                                         <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OYb-Q0-K5o">
@@ -998,7 +998,7 @@
                                                 <font key="font" metaFont="miniSystem"/>
                                             </buttonCell>
                                             <connections>
-                                                <action selector="browseFile_user_idleWithSender:" target="XfG-lQ-9wD" id="Pal-k2-rVd"/>
+                                                <action selector="template_display_wakeup:" target="XfG-lQ-9wD" id="uHP-og-4D2"/>
                                             </connections>
                                         </button>
                                         <button toolTip="Installs a launch daemon. On every boot sleepwatcher is loaded automatic." horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ho-Sa-fz1">
@@ -1031,6 +1031,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="edit_system_wakeup:" target="XfG-lQ-9wD" id="bHm-cl-7Vk"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6jO-7H-OaM">
                                             <rect key="frame" x="295" y="141" width="18" height="18"/>
@@ -1039,6 +1042,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="edit_display_dim:" target="XfG-lQ-9wD" id="P9s-aG-Jzn"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ovO-qs-q2U">
                                             <rect key="frame" x="295" y="97" width="18" height="18"/>
@@ -1047,6 +1053,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="edit_display_undim:" target="XfG-lQ-9wD" id="XJh-7Z-9AW"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZiN-TV-Am1">
                                             <rect key="frame" x="296" y="53" width="18" height="18"/>
@@ -1055,6 +1064,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="edit_display_sleep:" target="XfG-lQ-9wD" id="X1C-mf-xSg"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wh3-62-Ktt">
                                             <rect key="frame" x="613" y="235" width="18" height="18"/>
@@ -1063,6 +1075,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="edit_display_wakeup:" target="XfG-lQ-9wD" id="pFY-RC-fSl"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h2l-lE-2W6">
                                             <rect key="frame" x="613" y="188" width="18" height="18"/>
@@ -1071,6 +1086,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="edit_user_idle:" target="XfG-lQ-9wD" id="Cm1-il-iA7"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S4F-fl-OOb">
                                             <rect key="frame" x="613" y="97" width="18" height="18"/>
@@ -1079,6 +1097,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="edit_power_plug:" target="XfG-lQ-9wD" id="XRe-e7-m4u"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5y4-mR-67M">
                                             <rect key="frame" x="614" y="53" width="18" height="18"/>
@@ -1087,6 +1108,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="edit_power_unplug:" target="XfG-lQ-9wD" id="MWW-tg-AoI"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r6P-UC-HR1">
                                             <rect key="frame" x="613" y="141" width="18" height="18"/>
@@ -1095,6 +1119,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="edit_user_resume:" target="XfG-lQ-9wD" id="oEU-W0-bdj"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </view>
@@ -1188,16 +1215,25 @@
                         <outlet property="install_daemon" destination="ojX-nk-SH7" id="tI2-Wu-t8v"/>
                         <outlet property="run_button" destination="0kZ-J1-aJp" id="tmt-av-Qlf"/>
                         <outlet property="selected_display_dim_path" destination="cbR-70-0Ts" id="tO3-se-Xzj"/>
-                        <outlet property="selected_display_sleep_path" destination="eOG-EB-UL1" id="X9J-wX-xRG"/>
+                        <outlet property="selected_display_dim_path_edit" destination="6jO-7H-OaM" id="csW-SR-gSN"/>
+                        <outlet property="selected_display_sleep_path" destination="eOG-EB-UL1" id="dxd-2U-ooK"/>
+                        <outlet property="selected_display_sleep_path_edit" destination="ZiN-TV-Am1" id="Xaq-Au-zfO"/>
                         <outlet property="selected_display_undim_path" destination="nTb-sM-rXa" id="pGB-9W-6s5"/>
+                        <outlet property="selected_display_undim_path_edit" destination="ovO-qs-q2U" id="kHz-GL-wl0"/>
                         <outlet property="selected_display_wakeup_path" destination="OYb-Q0-K5o" id="quB-Go-4lr"/>
+                        <outlet property="selected_display_wakeup_path_edit" destination="Wh3-62-Ktt" id="dZH-vB-6rr"/>
                         <outlet property="selected_power_plug_path" destination="Nc7-FX-Y5s" id="r9s-HT-HxL"/>
+                        <outlet property="selected_power_plug_path_edit" destination="S4F-fl-OOb" id="eJA-aC-VeF"/>
                         <outlet property="selected_power_unplug_path" destination="oBQ-bB-A2b" id="FVA-VU-deZ"/>
+                        <outlet property="selected_power_unplug_path_edit" destination="5y4-mR-67M" id="rdc-qh-YEX"/>
                         <outlet property="selected_system_sleep_path" destination="bwn-zw-mVp" id="Sa4-rU-wVe"/>
                         <outlet property="selected_system_sleep_path_edit" destination="fwA-Aj-6dA" id="2tl-yE-Ure"/>
                         <outlet property="selected_system_wakeup_path" destination="Hm0-SQ-lvj" id="cCH-Qn-Kab"/>
+                        <outlet property="selected_system_wakeup_path_edit" destination="tCw-UC-wxo" id="l6y-HX-Y7f"/>
                         <outlet property="selected_user_idle_path" destination="QzY-0k-dVZ" id="F82-2u-IhF"/>
+                        <outlet property="selected_user_idle_path_edit" destination="h2l-lE-2W6" id="f6h-gU-sfJ"/>
                         <outlet property="selected_user_resume_path" destination="jRq-5y-WKy" id="T4d-Mh-Obu"/>
+                        <outlet property="selected_user_resume_path_edit" destination="r6P-UC-HR1" id="EQd-hB-pYJ"/>
                         <outlet property="sw_not_running_dot" destination="kt3-1d-DVH" id="Std-ws-yeO"/>
                         <outlet property="sw_running_dot" destination="z9o-qt-vPQ" id="UHG-eW-NI0"/>
                         <outlet property="text_editor" destination="do5-t9-dbL" id="aOv-cV-4fh"/>
