@@ -38,9 +38,11 @@ fi
 
     user_idle_path=$( _helpDefaultRead "user_idle_path" )
     act_user_idle=$( _helpDefaultRead "act_user_idle" )
+    user_idle_time=$( _helpDefaultRead "user_idle_time" )
     
     user_resume_path=$( _helpDefaultRead "user_resume_path" )
     act_user_resume=$( _helpDefaultRead "act_user_resume" )
+    user_wait_time=$( _helpDefaultRead "user_wait_time" )
     
     power_plug_path=$( _helpDefaultRead "power_plug_path" )
     act_power_plug=$( _helpDefaultRead "act_power_plug" )
@@ -67,10 +69,10 @@ fi
         c5=$( echo "-W" "$display_wakeup_path" )
     fi
     if [[ "$act_user_idle" = "1" && "$user_idle_path" != "" ]]; then
-        c6=$( echo "-i" "$user_idle_path" )
+        c6=$( echo "-t" "$user_idle_time" "-i" "$user_idle_path" )
     fi
     if [[ "$act_user_resume" = "1" && "$user_resume_path" != "" ]]; then
-        c7=$( echo "-r" "$user_resume_path" )
+        c7=$( echo "-b" "$user_wait_time" "-r" "$user_resume_path" )
     fi
     if [[ "$act_power_plug" = "1" && "$power_plug_path" != "" ]]; then
         c8=$( echo "-P" "$power_plug_path" )

@@ -164,6 +164,14 @@ class MainWindow: NSViewController {
         if alert_init != nil{
             UserDefaults.standard.set(false, forKey: "AlertShown")
         }
+        let user_idle_time = UserDefaults.standard.string(forKey: "user_idle_time")
+        if user_idle_time == nil{
+            UserDefaults.standard.set("120", forKey: "user_idle_time")
+        }
+        let user_wait_time = UserDefaults.standard.string(forKey: "user_wait_time")
+        if user_wait_time == nil{
+            UserDefaults.standard.set("10", forKey: "user_wait_time")
+        }
     }
     
     func run_check() {

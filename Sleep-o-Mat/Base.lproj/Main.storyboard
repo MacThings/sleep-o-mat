@@ -331,6 +331,53 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
+        <!--IdleTime-->
+        <scene sceneID="p09-47-Tjr">
+            <objects>
+                <viewController title="IdleTime" id="HxZ-8J-L4u" sceneMemberID="viewController">
+                    <view key="view" id="RyD-bS-bdj">
+                        <rect key="frame" x="0.0" y="0.0" width="170" height="57"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hgQ-WC-ayT">
+                                <rect key="frame" x="4" y="35" width="168" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="User idle after:" id="rTK-1j-GeE">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JOs-cY-EMo">
+                                <rect key="frame" x="6" y="9" width="66" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" focusRingType="none" alignment="center" drawsBackground="YES" id="1Yk-LF-Yd9">
+                                    <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" formatWidth="-1" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="Nzb-VR-lFA"/>
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="XFx-dG-Hyc" name="value" keyPath="values.user_idle_time" id="DcZ-sf-dvS"/>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2jL-U1-lCe">
+                                <rect key="frame" x="75" y="10" width="85" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="seconds." id="jS5-GR-3sx">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="koF-Qn-HTi" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <userDefaultsController id="XFx-dG-Hyc"/>
+            </objects>
+            <point key="canvasLocation" x="739" y="587.5"/>
+        </scene>
         <!--Main-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
@@ -692,7 +739,7 @@
                                             </connections>
                                         </button>
                                         <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QzY-0k-dVZ">
-                                            <rect key="frame" x="369" y="186" width="236" height="21"/>
+                                            <rect key="frame" x="369" y="186" width="210" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" focusRingType="none" drawsBackground="YES" id="wgF-vm-RXG">
                                                 <font key="font" metaFont="system"/>
@@ -732,7 +779,7 @@
                                             </buttonCell>
                                         </button>
                                         <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jRq-5y-WKy">
-                                            <rect key="frame" x="369" y="139" width="236" height="21"/>
+                                            <rect key="frame" x="369" y="139" width="210" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" focusRingType="none" drawsBackground="YES" id="eIs-7y-vnN">
                                                 <font key="font" metaFont="system"/>
@@ -1123,6 +1170,28 @@
                                                 <action selector="edit_user_resume:" target="XfG-lQ-9wD" id="oEU-W0-bdj"/>
                                             </connections>
                                         </button>
+                                        <button toolTip="Sets the user idle time in seconds." fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KoP-I6-N3j">
+                                            <rect key="frame" x="586" y="188" width="16" height="16"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSActionTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="KwV-z8-saQ">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <segue destination="HxZ-8J-L4u" kind="popover" popoverAnchorView="KoP-I6-N3j" popoverBehavior="t" preferredEdge="maxY" id="4eR-XY-Q4D"/>
+                                            </connections>
+                                        </button>
+                                        <button toolTip="Sets the user resume time in seconds." fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Epy-q1-x6Y">
+                                            <rect key="frame" x="585" y="141" width="17" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSActionTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="2kP-7d-TH2">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <segue destination="wGs-oB-ue8" kind="popover" popoverAnchorView="Epy-q1-x6Y" popoverBehavior="t" preferredEdge="maxY" id="4Gr-RW-TWi"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </view>
                             </box>
@@ -1286,9 +1355,57 @@
             </objects>
             <point key="canvasLocation" x="-353" y="212"/>
         </scene>
+        <!--IdleTime-->
+        <scene sceneID="QLq-6y-hax">
+            <objects>
+                <viewController title="IdleTime" id="wGs-oB-ue8" sceneMemberID="viewController">
+                    <view key="view" id="TaF-KX-rmT">
+                        <rect key="frame" x="0.0" y="0.0" width="169" height="57"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8nP-BB-Nai">
+                                <rect key="frame" x="6" y="9" width="66" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" focusRingType="none" alignment="center" drawsBackground="YES" id="5GV-zg-sx4">
+                                    <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" formatWidth="-1" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="EES-nj-n7u"/>
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="Ie7-97-rZi" name="value" keyPath="values.user_wait_time" id="FDU-L6-FDI"/>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Pc-Aa-F9F">
+                                <rect key="frame" x="4" y="35" width="156" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Wait after user resume:" id="Q0m-Nt-FOL">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2yn-lW-qQw">
+                                <rect key="frame" x="75" y="10" width="85" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="seconds." id="ted-cZ-GtF">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="3oA-dH-s8G" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <userDefaultsController id="Ie7-97-rZi"/>
+            </objects>
+            <point key="canvasLocation" x="778.5" y="768.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Edit" width="320" height="292"/>
+        <image name="NSActionTemplate" width="14" height="14"/>
         <image name="NSApplicationIcon" width="32" height="32"/>
     </resources>
 </document>
