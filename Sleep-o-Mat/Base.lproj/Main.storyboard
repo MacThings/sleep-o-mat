@@ -1303,7 +1303,6 @@
                         <outlet property="selected_user_idle_path_edit" destination="h2l-lE-2W6" id="f6h-gU-sfJ"/>
                         <outlet property="selected_user_resume_path" destination="jRq-5y-WKy" id="T4d-Mh-Obu"/>
                         <outlet property="selected_user_resume_path_edit" destination="r6P-UC-HR1" id="EQd-hB-pYJ"/>
-                        <outlet property="sw_not_running_dot" destination="kt3-1d-DVH" id="Std-ws-yeO"/>
                         <outlet property="sw_running_dot" destination="z9o-qt-vPQ" id="UHG-eW-NI0"/>
                         <outlet property="text_editor" destination="do5-t9-dbL" id="aOv-cV-4fh"/>
                     </connections>
