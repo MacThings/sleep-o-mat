@@ -313,7 +313,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nrm -r /Applications/Sleep-o-Mat.app\ncp -r \"${TARGET_BUILD_DIR}\"/Sleep-o-Mat.app /Applications/\nif [ -d /Volumes/Homeshare/Xcode/sleepomat ]; then\ncp \"/Users/luigi/Documents/Xcode/sleepomat/Sleep-o-Mat/sleepomat.html\" \"/Volumes/Homeshare/Xcode/sleepomat/upload/sleepomat.html\"\nrm /Volumes/Homeshare/Xcode/kextupdater/upload/kextupdaterng.zip 2> /dev/null\ncd /Applications\nditto -c -k --sequesterRsrc --keepParent Sleep-o-Mat.app /Volumes/Homeshare/Xcode/sleepomat/upload/sleepomat.zip\nfi\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nrm -r /Applications/Sleep-o-Mat.app\ncp -r \"${TARGET_BUILD_DIR}\"/Sleep-o-Mat.app /Applications/\nif [ -d /Volumes/Homeshare/Xcode/sleepomat ]; then\ncp \"/Users/luigi/Documents/Xcode/sleepomat/Sleep-o-Mat/sleepomat.html\" \"/Volumes/Homeshare/Xcode/sleepomat/upload/sleepomat.html\"\nrm /Volumes/Homeshare/Xcode/sleepomat/upload/sleepomat.zip 2> /dev/null\ncd /Applications\nditto -c -k --sequesterRsrc --keepParent Sleep-o-Mat.app /Volumes/Homeshare/Xcode/sleepomat/upload/sleepomat.zip\nfi\n";
 		};
 		93650CB5EA742CC87DC7018E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

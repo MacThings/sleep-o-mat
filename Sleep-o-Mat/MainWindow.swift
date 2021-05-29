@@ -736,6 +736,7 @@ class MainWindow: NSViewController {
         process.waitUntilExit()
     }
     
-
+    //let sw_running = run(bash: "ps ax | grep sleepwatcher | grep -v grep").stdout
+    //if sw_running != "" {
 }
 
