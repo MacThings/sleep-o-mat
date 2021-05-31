@@ -1,6 +1,0 @@
-framework module Pods_Sleep_o_Mat {
-  umbrella header "Pods-Sleep-o-Mat-umbrella.h"
-
-  export *
-  module * { export * }
-}
