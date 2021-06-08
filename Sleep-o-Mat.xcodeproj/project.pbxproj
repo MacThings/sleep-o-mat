@@ -23,6 +23,7 @@
 		2A8783D62656F2F700CEBBBF /* userresume.sh in config */ = {isa = PBXBuildFile; fileRef = 2A8783C22656F2D000CEBBBF /* userresume.sh */; };
 		2A8783E02658104500CEBBBF /* displaysleep.sh in config */ = {isa = PBXBuildFile; fileRef = 2A8783DC26580D6000CEBBBF /* displaysleep.sh */; };
 		2A8783E12658104500CEBBBF /* displaywakeup.sh in config */ = {isa = PBXBuildFile; fileRef = 2A8783D926580D5900CEBBBF /* displaywakeup.sh */; };
+		2A9A6324266FAA0500257DE0 /* LetsMoveIt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A6323266FAA0500257DE0 /* LetsMoveIt.swift */; };
 		2AAE31172664FF120054634E /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 2AAE31162664FF120054634E /* Sparkle */; };
 		2AB27047265530A9001EB8C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB27046265530A9001EB8C9 /* AppDelegate.swift */; };
 		2AB27049265530A9001EB8C9 /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB27048265530A9001EB8C9 /* MainWindow.swift */; };
@@ -95,6 +96,7 @@
 		2A8783C32656F2D000CEBBBF /* dim.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = dim.sh; sourceTree = "<group>"; };
 		2A8783D926580D5900CEBBBF /* displaywakeup.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = displaywakeup.sh; sourceTree = "<group>"; };
 		2A8783DC26580D6000CEBBBF /* displaysleep.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = displaysleep.sh; sourceTree = "<group>"; };
+		2A9A6323266FAA0500257DE0 /* LetsMoveIt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetsMoveIt.swift; sourceTree = "<group>"; };
 		2AB27043265530A9001EB8C9 /* Sleep-o-Mat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleep-o-Mat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AB27046265530A9001EB8C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AB27048265530A9001EB8C9 /* MainWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				2AB2705A265546E8001EB8C9 /* bin */,
 				2A8783AC26568F1800CEBBBF /* About.swift */,
 				2AB27046265530A9001EB8C9 /* AppDelegate.swift */,
+				2A9A6323266FAA0500257DE0 /* LetsMoveIt.swift */,
 				2AB27048265530A9001EB8C9 /* MainWindow.swift */,
 				2AB2704A265530AA001EB8C9 /* Assets.xcassets */,
 				2AB2704C265530AA001EB8C9 /* Main.storyboard */,
@@ -280,7 +283,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nrm -r /Applications/Sleep-o-Mat.app\nrm -r \"${TARGET_BUILD_DIR}\"/Sleep-o-Mat.app/Contents/Resources/bin/Sparkle.framework\nrm -r \"${TARGET_BUILD_DIR}\"/Sleep-o-Mat.app/Contents/Resources/config/Sparkle.framework\nrm -r \"${TARGET_BUILD_DIR}\"/Sleep-o-Mat.app/Contents/Resources/script/Sparkle.framework\ncp -r \"${TARGET_BUILD_DIR}\"/Sleep-o-Mat.app /Applications/\nif [ -d /Volumes/Homeshare/Xcode/sleepomat ]; then\ncp \"/Users/luigi/Documents/Xcode/sleepomat/Sleep-o-Mat/sleepomat.html\" \"/Volumes/Homeshare/Xcode/sleepomat/upload/sleepomat.html\"\nrm /Volumes/Homeshare/Xcode/sleepomat/upload/sleepomat.zip 2> /dev/null\ncd /Applications\nditto -c -k --sequesterRsrc --keepParent Sleep-o-Mat.app /Volumes/Homeshare/Xcode/sleepomat/upload/sleepomat.zip\nfi\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nfind \"${TARGET_BUILD_DIR}\"/\"${PRODUCT_NAME}.app\"/Contents/Resources -type d -name \"Sparkle.framework\" -exec rm -r \"{}\" \\;\nrm -r /Applications/\"${PRODUCT_NAME}.app\"\ncp -r \"${TARGET_BUILD_DIR}\"/\"${PRODUCT_NAME}.app\" /Applications/\nif [ -d /Volumes/Homeshare/Xcode/$newname ]; then\n    newname=$( echo \"${PRODUCT_NAME}\" |tr '[:upper:]' '[:lower:]' |sed -e 's/\\ //g' -e 's/-//g' )\n    cp \"/Users/luigi/Documents/Xcode/$newname/\"${PRODUCT_NAME}\"/$newname.html\" \"/Volumes/Homeshare/Xcode/$newname/upload/$newname.html\"\n    rm /Volumes/Homeshare/Xcode/$newname/upload/$newname.zip 2> /dev/null\n    cd /Applications\n    ditto -c -k --sequesterRsrc --keepParent \"${PRODUCT_NAME}.app\" /Volumes/Homeshare/Xcode/$newname/upload/$newname.zip\n    ditto -c -k --sequesterRsrc --keepParent \"${PRODUCT_NAME}.app\" ~/Desktop/\"${PRODUCT_NAME} ${MARKETING_VERSION}.zip\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -292,6 +295,7 @@
 				2AB27049265530A9001EB8C9 /* MainWindow.swift in Sources */,
 				2A8783AD26568F1800CEBBBF /* About.swift in Sources */,
 				2AB27047265530A9001EB8C9 /* AppDelegate.swift in Sources */,
+				2A9A6324266FAA0500257DE0 /* LetsMoveIt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +445,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Sleep-o-Mat/Sleep_o_Mat.entitlements";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 12;
@@ -465,6 +470,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Sleep-o-Mat/Sleep_o_Mat.entitlements";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 12;
